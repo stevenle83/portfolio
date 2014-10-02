@@ -1,0 +1,72 @@
+/* setting alignment classes */
+
+.center {
+	text-align: center;
+}
+
+/* setting properties for section div's */
+
+#intro, #projects, #about, #skills, #contacts {
+	height:100vh;
+	width: 100%;
+	position: relative;
+	background-position: center;
+	background-size: cover;
+	overflow: hidden;
+
+	&:nth-child(2n) {
+    box-shadow: inset 0 0 1em #111;
+  	}
+}
+
+#intro {
+	background: url(http://static.tumblr.com/c82c2e5257cfb5db48e9d1716ae7cdb6/qgqgzs8/O3tmykn9s/tumblr_static_backgrounds-wallpapers-9.jpg);
+	background-attachment: fixed;
+	padding-top: 5%;
+}
+
+#projects {
+	background: url(../images/projectsbg.jpg);
+  	background-attachment: fixed;
+}
+
+/* setting properties for carousel & carousel slides */
+
+#myCarousel {
+	width: 70%;
+	padding: 0;
+}
+
+#slide1, #slide2, #slide3, #slide4 {
+	height: 50vh;
+}
+
+#slide1 {
+	background: url(../images/quiz.png) no-repeat top center;
+	background-size: cover;
+}
+
+#slide2 {
+	background: url(../images/shopping-list.png) no-repeat top center;
+	background-size: cover;
+}
+
+#slide3 {
+	background: url(../images/movie.png) no-repeat top center;
+	background-size: cover;
+}
+
+#slide4 {
+	background: url(../images/hot-cold.png) no-repeat top center;
+	background-size: cover;
+}
+
+
+
+
+
+
+
+
+
+
