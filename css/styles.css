@@ -4,7 +4,7 @@
 	text-align: center;
 }
 
-/* setting properties for section div's */
+/* setting properties for section divs */
 
 #intro, #projects, #about, #skills, #contacts {
 	height:100vh;
@@ -20,9 +20,9 @@
 }
 
 #intro {
-	background: url(http://static.tumblr.com/c82c2e5257cfb5db48e9d1716ae7cdb6/qgqgzs8/O3tmykn9s/tumblr_static_backgrounds-wallpapers-9.jpg);
+	background: rgba(255, 255, 255, 0.7);
 	background-attachment: fixed;
-	padding-top: 5%;
+	padding-top: 200px;
 }
 
 #projects {
@@ -38,11 +38,11 @@
 }
 
 #slide1, #slide2, #slide3, #slide4 {
-	height: 50vh;
+	height: 70vh;
 }
 
 #slide1 {
-	background: url(../images/quiz.png) no-repeat top center;
+	background: url(../images/quiz.png) no-repeat center center;
 	background-size: cover;
 }
 
@@ -61,11 +61,17 @@
 	background-size: cover;
 }
 
+/* setting properties for caption of slides */
 
-
-
-
-
+.caption {
+	display: 
+	z-index: 500;
+	height: 25vh;
+	width: 100%;
+	background: gray;
+	position: absolute;
+	bottom: 0;
+}
 
 
 

@@ -10,7 +10,7 @@
 
 	<body>
 			
-		<nav class="navbar navbar-default navbar-fixed-top container-fluid" role="navigation">
+		<nav class="navbar navbar-default navbar-fixed-top container-fluid" id="nav" role="navigation">
 			
 			<div class="navbar-header">
 				
@@ -27,9 +27,9 @@
 			<div class="collapse navbar-collapse" id="navbarCollapse">
 				
 				<ul class="nav navbar-nav navbar-right">
+					<li><a href="#intro">Intro</a></li>
 					<li><a href="#projects">Projects</a></li>
 					<li><a href="#about">About</a></li>
-					<li><a href="#skills">Skills</a></li>
 					<li><a href="#contacts">Contacts</a></li>
 				</ul> 
 
@@ -37,16 +37,16 @@
 
 		</nav> <!--end nav-->
 		
-		<div class="main-content container-fluid">
+		<div class="main-content">
 
-			<section id="intro">
+			<section class="container center" id="intro">
 
 				<h1>Front End Developer</h1>
-				<p class="lead">Creating responsive and interactive websites for all</p>
+				<p class="lead">creating responsive and interactive projects</p>
 
 			</section> <!--end intro-->
 
-			<section id="projects" class="container">
+			<section class="container" id="projects">
 				
 				<div class="carousel slide container" id="myCarousel" data-ride="carousel" data-interval="3000">
 					
@@ -57,29 +57,41 @@
 						<li data-target="#myCarousel" data-slide-to="3"></li>
 					</ol> <!--end carousel-indicators-->
 
-					<div class="carousel-inner">
+					<div class="carousel-inner center">
 						
 						<div class="item active" id="slide1">
-							<div class="carousel-caption">
-								<h2>Quiz App</h2>
+							<div class="caption container">
+								<h4>The Walking Dead Trivia</h4>
+								<hr>
+								<p>This project is an interactive multiple choice quiz. As the title suggests, it tests the users' knowledge of the hit tv series "The Walking Dead."</p>
+								<p><a href="#">demo</a> || <a href="#">source</a></p>
 							</div>
 						</div>
-
+						
 						<div class="item" id="slide2">
-							<div class="carousel-caption">
-								<h2>Shopping List</h2>
+							<div class="caption container">
+								<h4>Shopping-List App</h4>
+								<hr>
+								<p>This is a web app that allows the user to easily make a list by adding and removing items. It also has a sortable list feature, allowing the user to arrange the list by dragging and dropping items.</p>
+								<p><a href="#">demo</a> || <a href="#">source</a></p>
 							</div>
 						</div>
 
 						<div class="item" id="slide3">
-							<div class="carousel-caption">
-								<h2>Movie Search</h2>
+							<div class="caption container">
+								<h4>Movie Search</h4>
+								<hr>
+								<p>Using Rotten Tomatoes' API, the user can search any movie by title or keyword to find general information about the movie and it's ratings.</p>
+								<p><a href="#">demo</a> || <a href="#">source</a></p>
 							</div>
 						</div>
 
 						<div class="item" id="slide4">
-							<div class="carousel-caption">
-								<h2>Hot or Cold</h2>
+							<div class="caption container">
+								<h4>Hot or Cold</h4>
+								<hr>
+								<p>This is a guessing game that randomly generates a number, which the user can take an unlimited number guesses to figure out. Each guess is given a description to let the user know how close or far he/she is from the correct number.</p>
+								<p><a href="#">demo</a> || <a href="#">source</a></p>
 							</div>
 						</div>
 
@@ -90,16 +102,24 @@
 				    <a href="#myCarousel" class="right carousel-control" data-slide="next"><span class="icon-next"></span></a>
 
 				</div> <!--end carousel-->
+					
+				<div class="skills">
+					
+					<ul>
+						Projects created with:
+						<li>HTML5</li>
+						<li>CSS3 (Bootstrap 3)</li>
+						<li>Javascript (jQuery)</li>
+						<li>AJAX/JSOn</li> 
+					</ul>
+
+				</div> <!--end skills-->		
 
 			</section> <!--end projects-->
 
 			<section id="about">
 				about
 			</section> <!--end about-->
-
-			<section id="skills">
-				skills
-			</section> <!--end skills-->
 
 			<section id="contacts">
 				contacts
@@ -126,7 +146,7 @@
 
 
 
-
+		
 		<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
 		<script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
 		<script src="js/app.js"></script>
