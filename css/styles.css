@@ -1,18 +1,29 @@
-/* setting alignment classes */
+/* setting classes for alignment and positioning */
 
 .center {
 	text-align: center;
 }
 
-/* setting properties for section divs */
+.left {
+	text-align: left;
+}
 
-#intro, #projects, #about, #skills, #contacts {
-	height:100vh;
+.margin-top-5 {
+	margin-top: 5em;
+}
+
+.margin-top-8 {
+	margin-top: 8em;
+
+}
+
+/* setting properties for section divs & classes within */
+
+#intro, #projects, #about, #contacts {
 	width: 100%;
 	position: relative;
 	background-position: center;
 	background-size: cover;
-	overflow: hidden;
 
 	&:nth-child(2n) {
     box-shadow: inset 0 0 1em #111;
@@ -20,25 +31,58 @@
 }
 
 #intro {
-	background: rgba(255, 255, 255, 0.7);
+	height: 100vh;
+	background: #fff;
 	background-attachment: fixed;
-	padding-top: 200px;
+	padding-top: 16em;
+	letter-spacing: 2px;
 }
 
 #projects {
+	height: 100vh;
 	background: url(../images/projectsbg.jpg);
   	background-attachment: fixed;
+}
+
+#about {
+	height: 100vh;
+	padding: 0 5%;
+	overflow: auto;
+	line-height: 2em;
+}
+
+#contacts {
+	height: 90vh;
+}
+
+.skills {
+	color: #fff;
+	margin-top: 1.5em;
+}
+
+.icons li {
+	display: inline-block;
+	margin-right: 2em;
+}
+
+
+/* setting properties for footer */
+
+footer {
+	height: 10vh;
+	width: 100%;
+	background: black;
 }
 
 /* setting properties for carousel & carousel slides */
 
 #myCarousel {
-	width: 70%;
+	width: 80%;
 	padding: 0;
 }
 
 #slide1, #slide2, #slide3, #slide4 {
-	height: 70vh;
+	height: 65vh;
 }
 
 #slide1 {
@@ -61,7 +105,7 @@
 	background-size: cover;
 }
 
-/* setting properties for caption of slides */
+/* setting properties for caption of carousel slides */
 
 .caption {
 	display: 
@@ -72,7 +116,6 @@
 	position: absolute;
 	bottom: 0;
 }
-
 
 
 
