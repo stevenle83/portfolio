@@ -20,7 +20,7 @@
 /* setting properties for section divs & classes within */
 
 #intro, #projects, #about, #contacts {
-	width: 100%;
+	width: 100vw;
 	position: relative;
 	background-position: center;
 	background-size: cover;
@@ -69,8 +69,8 @@
 /* setting properties for footer */
 
 footer {
-	height: 10vh;
-	width: 100%;
+	width: 100vw;
+	height: 10vh; 
 	background: black;
 }
 
