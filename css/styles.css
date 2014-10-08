@@ -1,5 +1,14 @@
-/* setting classes for alignment and positioning */
+/* setting properties for body */
+body {
+	background: url(../images/responsivebg.jpg) no-repeat left center fixed;
+	-webkit-background-size: cover;
+  	-moz-background-size: cover;
+  	-o-background-size: cover;
+	background-size: cover;
+	color: #fff;
+}
 
+/* setting classes for alignment and positioning */
 .center {
 	text-align: center;
 }
@@ -12,73 +21,82 @@
 	margin-top: 5em;
 }
 
-.margin-top-8 {
-	margin-top: 8em;
+.margin-top-7 {
+	margin-top: 7em;
 
 }
 
-/* setting properties for section divs & classes */
+/* setting properties for navabr */
+.navbar {
+	background: rgba(0, 0, 5, 0.9);
+	border: transparent;
+}
 
+.navbar a {
+	color: silver !important;
+}
+
+/* setting properties for section divs & classes */
 #intro, #projects, #about, #contacts {
 	width: auto;
 	position: relative;
-	background-position: center;
+	-webkit-background-size: cover;
+  	-moz-background-size: cover;
+  	-o-background-size: cover;
 	background-size: cover;
 }
 
 #intro {
 	height: 100vh;
-	background: url(../images/web-bg.jpg) no-repeat; 
-	background-attachment: fixed;
-	padding-top: 16em;
+}
+
+header {
+	background: rgba(240, 240, 255, 0.9);
+	color: #000;
+	position: relative;
+	top: 230px;
+	margin: 0 auto;
 	letter-spacing: 2px;
+	border-radius: 2px;
 }
 
 #projects {
 	height: 100vh;
-	background: url(../images/projectsbg.jpg) no-repeat;
+	background: url(../images/blackbg3.jpg) no-repeat center center;
   	background-attachment: fixed;
 }
 
 #about {
-	height: 100vh;
 	padding: 0 5%;
 	overflow: auto;
 	line-height: 2em;
 }
 
 #contacts {
-	height: 90vh;
+
 }
 
 .skills {
-	color: #fff;
+	background: rgba(0, 0, 5, 0.7);
 	margin-top: 1.5em;
 }
 
-.icons li {
-	display: inline-block;
-	margin-right: 2em;
-}
-
-
 /* setting properties for footer */
-
 footer {
 	width: auto;
 	height: 10vh; 
 	background: black;
+	line-height: 10vh;
 }
 
 /* setting properties for carousel & carousel slides */
-
 #myCarousel {
 	width: 80%;
 	padding: 0;
 }
 
 #slide1, #slide2, #slide3, #slide4 {
-	height: 65vh;
+	height: 70vh;
 }
 
 #slide1 {
@@ -102,15 +120,54 @@ footer {
 }
 
 /* setting properties for caption of carousel slides */
-
 .caption {
 	display: 
-	z-index: 500;
-	height: 25vh;
+	z-index: 9999;
+	height: 20vh;
 	width: 100%;
 	background: gray;
 	position: absolute;
 	bottom: 0;
 }
+
+/* media query for phones */
+@media (max-width:767px) {
+
+	header {
+		width: auto;
+		top: 200px;
+	}
+	
+	#myCarousel {
+		width: auto;
+		margin-top: 5em;
+	}
+
+	.caption {
+		height: 30vh;
+	}
+
+}
+
+/* media query for tablets */
+@media (min-width:768px) and (max-width: 1199px) {
+
+	header {
+		width: 65%;
+		top: 200px;
+	}
+
+}
+
+/* media query for laptop & desktop devices */
+@media (min-width: 1200px) {
+
+	header {
+		width: 45%;
+	}
+
+}
+
+
 
 
