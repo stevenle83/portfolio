@@ -65,8 +65,8 @@
 /* setting properties for footer */
 
 footer {
-	height: 10vh;
-	width: 100%;
+	width: 100vw;
+	height: 10vh; 
 	background: black;
 }
 
@@ -113,8 +113,4 @@ footer {
 	bottom: 0;
 }
 
-/*body {
-	background: url(../images/web-bg.jpg) no-repeat center center fixed;
-	background-size: cover; 
-}*/
 
