@@ -65,7 +65,7 @@
 /* setting properties for footer */
 
 footer {
-	width: 100vw;
+	width: auto;
 	height: 10vh; 
 	background: black;
 }
