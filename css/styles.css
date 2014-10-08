@@ -17,22 +17,18 @@
 
 }
 
-/* setting properties for section divs & classes within */
+/* setting properties for section divs & classes */
 
 #intro, #projects, #about, #contacts {
-	width: 100%;
+	width: auto;
 	position: relative;
 	background-position: center;
 	background-size: cover;
-
-	&:nth-child(2n) {
-    box-shadow: inset 0 0 1em #111;
-  	}
 }
 
 #intro {
 	height: 100vh;
-	background: #fff;
+	background: url(../images/web-bg.jpg) no-repeat; 
 	background-attachment: fixed;
 	padding-top: 16em;
 	letter-spacing: 2px;
@@ -40,7 +36,7 @@
 
 #projects {
 	height: 100vh;
-	background: url(../images/projectsbg.jpg);
+	background: url(../images/projectsbg.jpg) no-repeat;
   	background-attachment: fixed;
 }
 
@@ -117,5 +113,8 @@ footer {
 	bottom: 0;
 }
 
-
+/*body {
+	background: url(../images/web-bg.jpg) no-repeat center center fixed;
+	background-size: cover; 
+}*/
 
