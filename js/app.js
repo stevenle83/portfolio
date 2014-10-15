@@ -14,6 +14,20 @@ $(document).ready(function() {
         
         $("html, body").animate({scrollTop: parseInt($(page).position().top)}, 1000);
         
-    });     
+    }); 
+
+    //hover fadeIn/fadeOut effect for slide description
+    $('.item').mouseenter(function() {
+
+        $('.caption').fadeIn("slow");
+
+            $(this).mouseleave(function() {
+
+                $('.caption').fadeOut("slow");
+
+            });
+
+    });  
+
     
 });

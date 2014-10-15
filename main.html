@@ -6,6 +6,7 @@
 		<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0">
 		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
 		<link rel="stylesheet" href="css/styles.css">
+		<link href="css/hover-min.css" rel="stylesheet" media="all">
 	</head>
 
 	<body>
@@ -20,17 +21,17 @@
                 	<span class="icon-bar"></span>
 				</button>
 
-				<a href="#" class="navbar-brand">Steven Le</a>
+				<p class="navbar-brand white">Steven Le</p>
 
 			</div> <!--end navbar-header-->
 
 			<div class="collapse navbar-collapse" id="navbarCollapse">
 				
 				<ul class="nav navbar-nav navbar-right">
-					<li><a href="#intro">Intro</a></li>
-					<li><a href="#projects">Projects</a></li>
-					<li><a href="#about">About</a></li>
-					<li><a href="#contacts">Contacts</a></li>
+					<li class="float"><a class="white" href="#intro">Intro</a></li>
+					<li class="float"><a class="white" href="#projects">Projects</a></li>
+					<li class="float"><a class="white" href="#about">About</a></li>
+					<li class="float"><a class="white" href="#contacts">Contacts</a></li>
 				</ul> 
 
 			</div> <!--end navbar-collapse-->
@@ -40,66 +41,114 @@
 		<div class="main">
 
 			<section id="intro">
+
 				<div class="row">
-				<div class="col-xs-12">
-				<header class="center">
 
-					<h1>Front End Developer</h1>
-					<p class="lead">Building responsive and interactive projects</p>
+					<div class="col-xs-12">
 
-				</header>	
-				</div>
-				</div>
+						<header class="center">
+
+							<h1>Front End Developer</h1>
+							<p class="lead">Creating responsive and interactive websites<br>Let's build something</p>
+
+						</header>	
+
+					</div> <!--end col-xs-12-->
+
+				</div> <!--end row-->
+
 			</section> <!--end intro-->
 
 			<section class="container" id="projects">
 				
 				<div class="carousel slide container margin-top-7" id="myCarousel" data-ride="carousel" data-interval="3000">
-					
-					<ol class="carousel-indicators">
-						<li class="active" data-target="#myCarousel" data-slide-to="0"></li>
-						<li data-target="#myCarousel" data-slide-to="1"></li>
-						<li data-target="#myCarousel" data-slide-to="2"></li>
-						<li data-target="#myCarousel" data-slide-to="3"></li>
-					</ol> <!--end carousel-indicators-->
+
+					<ol class="carousel-indicators hidden-md hidden-lg">
+
+			            <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+			            <li data-target="#myCarousel" data-slide-to="1"></li>
+			            <li data-target="#myCarousel" data-slide-to="2"></li>
+			            <li data-target="#myCarousel" data-slide-to="3"></li>
+
+			        </ol>  <!--end carousel-indicators-->  
 					
 					<div class="carousel-inner center">
 
 						<div class="item active" id="slide1">
-							<div class="caption container">
+
+							<div class="carousel-caption hidden-md hidden-lg">
+
+								<p><a href="http://stevenle83.github.io/quiz-app/main.html" target="_blank">demo</a> || <a href="https://github.com/stevenle83/quiz-app" target="_blank">source</a></p>
+
+							</div>
+
+							<div class="caption container hidden-xs hidden-sm">
+								
 								<h4>The Walking Dead Trivia</h4>
 								<hr>
-								<p>This project is an interactive multiple choice quiz. As the title suggests, it tests the user's knowledge of the hit tv series "The Walking Dead."</p>
-								<p><a href="#">demo</a> || <a href="#">source</a></p>
-							</div>
-						</div>
+								<p class="lead">This is an interactive multiple choice quiz designed using Javascript and jQuery.</p>
+								<p><a href="http://stevenle83.github.io/quiz-app/main.html" target="_blank">demo</a> || <a href="https://github.com/stevenle83/quiz-app" target="_blank">source</a></p>
+
+							</div> 
+
+						</div> <!--end slide1-->
 						
 						<div class="item" id="slide2">
-							<div class="caption container">
-								<h4>Shopping-List App</h4>
-								<hr>
-								<p>This is a web app that allows the user to easily make a list by adding and removing items. It also has a sortable list feature which allows the user to arrange the list by dragging and dropping items.</p>
-								<p><a href="#">demo</a> || <a href="#">source</a></p>
+
+							<div class="carousel-caption hidden-md hidden-lg">
+
+								<p><a href="http://stevenle83.github.io/shopping-list/main.html" target="_blank">demo</a> || <a href="https://github.com/stevenle83/shopping-list" target="_blank">source</a></p>
+								
 							</div>
-						</div>
+
+							<div class="caption container hidden-xs hidden-sm">
+
+								<h4>Shopping List App</h4>
+								<hr>
+								<p class="lead">An interactive web application which allows you to add and remove items to make a list using jQuery.</p>
+								<p><a href="http://stevenle83.github.io/shopping-list/main.html" target="_blank">demo</a> || <a href="https://github.com/stevenle83/shopping-list" target="_blank">source</a></p>
+								
+							</div>
+
+						</div> <!--end slide2-->
 
 						<div class="item" id="slide3">
-							<div class="caption container">
-								<h4>Movie Search</h4>
-								<hr>
-								<p>Using Rotten Tomatoes' API, the user can search any movie by title or keywords to find general information about the movie and it's ratings.</p>
-								<p><a href="#">demo</a> || <a href="#">source</a></p>
+
+							<div class="carousel-caption hidden-md hidden-lg">
+
+								<p><a href="http://stevenle83.github.io/movie-wiz/main.html" target="_blank">demo</a> || <a href="https://github.com/stevenle83/movie-wiz" target="_blank">source</a></p>
+								
 							</div>
-						</div>
+
+							<div class="caption container hidden-xs hidden-sm">
+								
+								<h4>Moive Wiz</h4>
+								<hr>	
+								<p class="lead">Using AJAX calls to Rotten Tomatoes' database, this application allows users to search for general information on any movie by title or keywords.</p>
+								<p><a href="http://stevenle83.github.io/movie-wiz/main.html" target="_blank">demo</a> || <a href="https://github.com/stevenle83/movie-wiz" target="_blank">source</a></p>
+								
+							</div>
+
+						</div> <!--end slide3-->
 
 						<div class="item" id="slide4">
-							<div class="caption container">
+
+							<div class="carousel-caption hidden-md hidden-lg">
+
+								<p><a href="http://stevenle83.github.io/hot-or-cold/index.html" target="_blank">demo</a> || <a href="https://github.com/stevenle83/hot-or-cold" target="_blank">source</a></p>
+								
+							</div>
+
+							<div class="caption container hidden-xs hidden-sm">
+								
 								<h4>Hot or Cold</h4>
 								<hr>
-								<p>This is a guessing game that randomly generates a number, which the user can take an unlimited number guesses to figure out. Each guess is given a description to let the user know how close or far he/she is from the correct number.</p>
-								<p><a href="#">demo</a> || <a href="#">source</a></p>
+								<p class="lead">A number guessing game created with Javascript and jQuery.</p>
+								<p><a href="http://stevenle83.github.io/hot-or-cold/index.html" target="_blank">demo</a> || <a href="https://github.com/stevenle83/hot-or-cold" target="_blank">source</a></p>
+								
 							</div>
-						</div>
+
+						</div> <!--end slide4-->
 
 					</div> <!--end carousel-inner-->
 					
@@ -107,13 +156,7 @@
 					<a href="#myCarousel" class="left carousel-control" data-slide="prev"><span class="glyphicon glyphicon-chevron-left"></span></a>
 				    <a href="#myCarousel" class="right carousel-control" data-slide="next"><span class="glyphicon glyphicon-chevron-right"></span></a>
 
-				</div> <!--end carousel-->
-					
-				<div class="skills center">
-					
-					<p class="lead">Skills: HTML5, CSS3 (Bootstrap3), Javascript (jQuery), AJAX/JSON.</p>
-
-				</div> <!--end skills-->		
+				</div> <!--end carousel-->		
 
 			</section> <!--end projects-->
 
@@ -128,12 +171,12 @@
 					</div> <!--end col-xs-12-->
 
 				</div> <!--end row-->
-	
+				<hr>
 				<div class="row">
 					
-					<div class="col-xs-12 left margin-top-5">
+					<div class="col-xs-12 left margin-top-2">
 						
-						<p>Hi my name is Steven Le. I am working out of New Orleans, Louisiana. I was a small business owner from 2007-2014. After selling my business I've decided to pursue a career in Web Development. I started off coding at codeacademy and realized that I really enjoyed building something from scratch and seeing it all happen on screen. Codeacademy was a good introduction to coding, but I was seeking more challenging projects. I did my research and stumbled upon Thinkful.com. I enrolled in Thinkful's front-end development course and here I am, buildinng a number of projects and creating my own portfolio website. I've learned how to build projects from scratch using my knowledge of HTML, CSS, Javascript, jQuery, AJAX/JSON, and the Twitter Bootstrap 3 framework. We were often given assignments where we'd have to used existing projects with HTML and CSS through Github, and add our own javascript codes to complete the assignment. I've learned how to work with others on projects, as well as working independently. I look forward to putting my aquired skills to use and pursue my passion for coding.</p>
+						<p>Hi my name is Steven Le and I am working out of New Orleans, Louisiana. I was a small business owner for 7 years, but felt that my job was just not fullfilling. After selling my business I decided to pursue a career as a front-end web developer. I started off at codeacademy then moved on to complete Thinkful's front-end web development course. Having a passion for coding and creating something from scratch inspires me to be a great developer. I am proficient in HTML5, CSS3 (Bootstrap 3), Javascript (jQuery), and AJAX/JSON.</p>
 						
 					</div> <!--end col-xs-12-->	
 
@@ -141,20 +184,20 @@
 
 			</section> <!--end about-->
 
-			<section class="center container" id="contacts">
+			<section class="center" id="contacts">
 				
-				<div class="contacts-wrapper margin-top-7">
-
-					<h2>Let's build something</h2>
+				<div class="contacts-wrapper">
 					
+					<h2>Contact Me</h2>
+
 					<div class="row">
 
-						<div class="col-xs-12">
+						<div class="col-xs-12 social">
 	
-							<a href="#"><img src="images/email.png" alt="email" width="50" height="50"></a>
-							<a href="#"><img src="images/facebook.png" alt="facebook" width="50" height="50"></a>
-							<a href="#"><img src="images/linkedin.png" alt="linkedin" width="50" height="50"></a>
-							<a href="#"><img src="images/twitter.png" alt="twitter" width="50" height="50"></a>
+							<a href="#"><img class="pulse-grow" src="images/email.png" alt="email" width="50" height="50"></a>
+							<a href="#"><img class="pulse-grow" src="images/facebook.png" alt="facebook" width="50" height="50"></a>
+							<a href="#"><img class="pulse-grow" src="images/linkedin.png" alt="linkedin" width="50" height="50"></a>
+							<a href="#"><img class="pulse-grow" src="images/twitter.png" alt="twitter" width="50" height="50"></a>
 						
 						</div> <!--end col-xs-12-->	
 
@@ -166,9 +209,11 @@
 
 		</div> <!--end main-->	
 
-		<footer>
-			<p>by Steven Le</p>
-		</footer>
+		<footer class="center">
+
+			<p>© Steven Le 2014</p>
+
+		</footer> <!--end footer-->
 		
 		<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
 		<script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>

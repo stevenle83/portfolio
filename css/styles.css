@@ -1,11 +1,10 @@
 /* setting properties for body */
 body {
-	background: url(../images/responsivebg.jpg) no-repeat left center fixed;
+	background: url(../images/responsivebg.jpg) no-repeat center center fixed; 
 	-webkit-background-size: cover;
   	-moz-background-size: cover;
   	-o-background-size: cover;
 	background-size: cover;
-	color: #fff;
 }
 
 /* setting classes for alignment and positioning */
@@ -17,8 +16,8 @@ body {
 	text-align: left;
 }
 
-.margin-top-5 {
-	margin-top: 5em;
+.margin-top-2 {
+	margin-top: 2em;
 }
 
 .margin-top-7 {
@@ -26,14 +25,19 @@ body {
 
 }
 
+/* setting color property */
+.white {
+	color: #fff !important;
+}
+
+a {
+	color: #fff;
+}
+
 /* setting properties for navabr */
 .navbar {
 	background: rgba(0, 0, 5, 0.9);
 	border: transparent;
-}
-
-.navbar a {
-	color: silver !important;
 }
 
 /* setting properties for section divs & classes */
@@ -48,16 +52,15 @@ body {
 
 #intro {
 	height: 100vh;
+	background: rgba(0, 0, 255, 0.3);
 }
 
 header {
-	background: rgba(240, 240, 255, 0.9);
-	color: #000;
+	color: #fff;
 	position: relative;
 	top: 230px;
 	margin: 0 auto;
 	letter-spacing: 2px;
-	border-radius: 2px;
 }
 
 #projects {
@@ -67,36 +70,53 @@ header {
 }
 
 #about {
-	padding: 0 5%;
+	height: 100vh;
+	background-attachment: fixed;
+	background: #fff;
 	overflow: auto;
 	line-height: 2em;
+	padding: 0 5em;
+	font-size: 18px;
 }
 
 #contacts {
-
+	height: 90vh;
+	background-attachment: fixed;
+	background: rgba(127, 0, 255, 0.4);
+	color: #fff;
+	overflow: hidden;
 }
 
-.skills {
-	background: rgba(0, 0, 5, 0.7);
-	margin-top: 1.5em;
+.contacts-wrapper {
+	margin-top: 12em;
+}
+
+.social {
+	margin-top: 4em;
+}
+
+.social img {
+	margin: 0 2em;
 }
 
 /* setting properties for footer */
 footer {
 	width: auto;
-	height: 10vh; 
-	background: black;
-	line-height: 10vh;
+	height: 10vh;
+	line-height: 10vh; 
+	background: rgba(0, 0, 5, 0.9);
+	color: #fff;
 }
 
 /* setting properties for carousel & carousel slides */
 #myCarousel {
-	width: 80%;
+	width: 90%;
 	padding: 0;
 }
 
 #slide1, #slide2, #slide3, #slide4 {
 	height: 70vh;
+	overflow: hidden;
 }
 
 #slide1 {
@@ -121,17 +141,24 @@ footer {
 
 /* setting properties for caption of carousel slides */
 .caption {
-	display: 
-	z-index: 9999;
-	height: 20vh;
+	display: none;
+	background: rgba(0, 0, 0, 0.9);
+	color: #fff;
 	width: 100%;
-	background: gray;
 	position: absolute;
 	bottom: 0;
 }
 
+.caption a:hover {
+
+}
+.carousel-caption {
+	position: absolute;
+	top: 10px;
+}
+
 /* media query for phones */
-@media (max-width:767px) {
+@media (min-width: 320px) and (max-width: 600px) {
 
 	header {
 		width: auto;
@@ -140,34 +167,69 @@ footer {
 	
 	#myCarousel {
 		width: auto;
-		margin-top: 5em;
+		margin-top: 7em;
 	}
 
-	.caption {
-		height: 30vh;
+	#about {
+		font-size: 14.5px;
+		padding: 0 1em;
+	}
+
+	.social img {
+		margin: 0 1em;
 	}
 
 }
 
+/* setting hover effect classes */
+.float:hover {
+	text-decoration: none;
+	-webkit-transform: translateY(-5px);
+  	-ms-transform: translateY(-5px);
+  	-o-transform: translateY(-5px);
+  	transform: translateY(-5px);
+}
+
+.pulse-grow:hover, .pulse-grow:focus, .pulse-grow:active {
+  -webkit-animation-name: pulse-grow;
+  animation-name: pulse-grow;
+  -webkit-animation-duration: 0.3s;
+  animation-duration: 0.3s;
+  -webkit-animation-timing-function: linear;
+  animation-timing-function: linear;
+  -webkit-animation-iteration-count: infinite;
+  animation-iteration-count: infinite;
+  -webkit-animation-direction: alternate;
+  animation-direction: alternate;
+}
+
+.pulse-grow {
+  display: inline-block;
+  -webkit-transform: translateZ(0);
+  transform: translateZ(0);
+  box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+}
+
 /* media query for tablets */
-@media (min-width:768px) and (max-width: 1199px) {
+@media (min-width: 601px) and (max-width: 1024px) {
 
 	header {
 		width: 65%;
 		top: 200px;
 	}
 
-}
-
-/* media query for laptop & desktop devices */
-@media (min-width: 1200px) {
-
-	header {
-		width: 45%;
+	#about {
+		font-size: 16px;
+		padding: 0 2em;
 	}
 
 }
 
+/* media query for laptop & desktop devices */
+@media (min-width: 1025px) {
 
+	header {
+		width: 50%;
+	}
 
-
+}
