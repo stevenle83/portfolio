@@ -82,7 +82,7 @@ header {
 #contacts {
 	height: 90vh;
 	background-attachment: fixed;
-	background: rgba(127, 0, 255, 0.4);
+	background: rgba(127, 0, 255, 0);
 	color: #fff;
 	overflow: hidden;
 }
