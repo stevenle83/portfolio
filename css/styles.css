@@ -5,6 +5,7 @@ body {
   	-moz-background-size: cover;
   	-o-background-size: cover;
 	background-size: cover;
+	font-family: 'Oswald', sans-serif;
 }
 
 /* setting classes for alignment and positioning */
@@ -28,10 +29,6 @@ body {
 /* setting color property */
 .white {
 	color: #fff !important;
-}
-
-a {
-	color: #fff;
 }
 
 /* setting properties for navabr */
@@ -65,24 +62,23 @@ header {
 
 #projects {
 	height: 100vh;
-	background: url(../images/blackbg3.jpg) no-repeat center center;
+	background: url(../images/blackbg4.jpg) no-repeat center;
   	background-attachment: fixed;
 }
 
 #about {
-	height: 100vh;
 	background-attachment: fixed;
-	background: #fff;
+	background: rgba(225, 225, 230, 1);
 	overflow: auto;
 	line-height: 2em;
-	padding: 0 5em;
+	padding: 0 5em 2em 5em;
 	font-size: 18px;
 }
 
 #contacts {
 	height: 90vh;
 	background-attachment: fixed;
-	background: rgba(127, 0, 255, 0);
+	background: rgba(0, 0, 255, 0.3);
 	color: #fff;
 	overflow: hidden;
 }
@@ -110,75 +106,55 @@ footer {
 
 /* setting properties for carousel & carousel slides */
 #myCarousel {
+	-moz-box-shadow: 10px 10px 29px #d9d6d9;
+	-webkit-box-shadow: 10px 10px 29px #d9d6d9;
+	box-shadow: 10px 10px 29px #d9d6d9;
+	border: 2px solid #000;
 	width: 90%;
 	padding: 0;
 }
 
 #slide1, #slide2, #slide3, #slide4 {
 	height: 70vh;
-	overflow: hidden;
 }
 
 #slide1 {
-	background: url(../images/quiz.png) no-repeat center center;
+	background: url(../images/quiz.png) no-repeat center;
 	background-size: cover;
 }
 
 #slide2 {
-	background: url(../images/shopping-list.png) no-repeat top center;
+	background: url(../images/shopping-list.png) no-repeat center;
 	background-size: cover;
 }
 
 #slide3 {
-	background: url(../images/movie.png) no-repeat top center;
+	background: url(../images/movie.png) no-repeat center;
 	background-size: cover;
 }
 
 #slide4 {
-	background: url(../images/hot-cold.png) no-repeat top center;
+	background: url(../images/hot-cold.png) no-repeat center;
 	background-size: cover;
 }
 
 /* setting properties for caption of carousel slides */
 .caption {
 	display: none;
-	background: rgba(0, 0, 0, 0.9);
-	color: #fff;
+	background: rgba(255, 255, 255, 1);
+	color: #000;
 	width: 100%;
 	position: absolute;
 	bottom: 0;
 }
 
-.caption a:hover {
-
+.caption a {
+	color: #000;
 }
+
 .carousel-caption {
 	position: absolute;
 	top: 10px;
-}
-
-/* media query for phones */
-@media (min-width: 320px) and (max-width: 600px) {
-
-	header {
-		width: auto;
-		top: 200px;
-	}
-	
-	#myCarousel {
-		width: auto;
-		margin-top: 7em;
-	}
-
-	#about {
-		font-size: 14.5px;
-		padding: 0 1em;
-	}
-
-	.social img {
-		margin: 0 1em;
-	}
-
 }
 
 /* setting hover effect classes */
@@ -210,6 +186,34 @@ footer {
   box-shadow: 0 0 1px rgba(0, 0, 0, 0);
 }
 
+/* media query for phones */
+@media (min-width: 320px) and (max-width: 600px) {
+
+	header {
+		width: auto;
+		top: 200px;
+	}
+	
+	#myCarousel {
+		width: auto;
+		margin-top: 7em;
+	}
+
+	.carousel-caption a {
+		color: #fff;
+	}
+
+	#about {
+		font-size: 14.5px;
+		padding: 0 1em;
+	}
+
+	.social img {
+		margin: 0 1em;
+	}
+
+}
+
 /* media query for tablets */
 @media (min-width: 601px) and (max-width: 1024px) {
 
@@ -221,6 +225,10 @@ footer {
 	#about {
 		font-size: 16px;
 		padding: 0 2em;
+	}
+
+	.carousel-caption a {
+		color: #fff;
 	}
 
 }
