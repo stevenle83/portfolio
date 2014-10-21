@@ -33,7 +33,7 @@ body {
 
 /* setting properties for navabr */
 .navbar {
-	background: rgba(0, 0, 5, 0.9);
+	background: rgba(0, 0, 0, 0.9);
 	border: transparent;
 }
 
@@ -50,14 +50,8 @@ body {
 #intro {
 	height: 100vh;
 	background: rgba(0, 0, 255, 0.3);
-}
-
-header {
-	color: #fff;
-	position: relative;
-	top: 230px;
-	margin: 0 auto;
-	letter-spacing: 2px;
+	padding-top: 230px;
+	letter-spacing: 3px;
 }
 
 #projects {
@@ -68,27 +62,33 @@ header {
 
 #about {
 	background-attachment: fixed;
+	height: 100vh;
 	background: rgba(225, 225, 230, 1);
 	overflow: auto;
-	line-height: 2em;
+	line-height: 3em;
 	padding: 0 5em 2em 5em;
 	font-size: 18px;
 }
 
-#contacts {
-	height: 90vh;
-	background-attachment: fixed;
-	background: rgba(0, 0, 255, 0.3);
-	color: #fff;
-	overflow: hidden;
+#features {
+	height: 60vh;
+	padding-top: 9em;
+	background: rgba(71, 4, 137, 0.4);
 }
 
-.contacts-wrapper {
-	margin-top: 12em;
+.panel {
+	height: 30vh;
+	line-height: 5vh;
+	overflow: auto;
+}
+
+#contacts {
+	height: 30vh;
+	background: rgba(71, 4, 137, 0.4);
 }
 
 .social {
-	margin-top: 4em;
+	margin-top: 3em;
 }
 
 .social img {
@@ -99,8 +99,9 @@ header {
 footer {
 	width: auto;
 	height: 10vh;
-	line-height: 10vh; 
-	background: rgba(0, 0, 5, 0.9);
+	line-height: 8.5vh;
+	letter-spacing: 2px; 
+	background: rgba(0, 0, 0, 0.9);
 	color: #fff;
 }
 
@@ -187,7 +188,7 @@ footer {
 }
 
 /* media query for phones */
-@media (min-width: 320px) and (max-width: 600px) {
+@media (min-width: 320px) and (max-width: 480px) {
 
 	header {
 		width: auto;
@@ -206,16 +207,48 @@ footer {
 	#about {
 		font-size: 14.5px;
 		padding: 0 1em;
+		line-height: 2em;
+	}
+
+	#features {
+		height: auto;
+		padding-top: 7em;
 	}
 
 	.social img {
 		margin: 0 1em;
 	}
 
+	footer {
+		letter-spacing: 1px;
+	}
+
+}
+
+@media (min-width: 481px) and (max-width: 767px) {
+	
+	.carousel-caption a {
+		color: #fff;
+	}
+
+	.panel {
+		height: 27vh;
+		line-height: 7vh;
+	}
+
+	#about {
+		line-height: 2em;
+		padding: 0 1em;
+	}
+
+	#features {
+		height: auto;
+	}
+
 }
 
 /* media query for tablets */
-@media (min-width: 601px) and (max-width: 1024px) {
+@media (min-width: 768px) and (max-width: 1024px) {
 
 	header {
 		width: 65%;
