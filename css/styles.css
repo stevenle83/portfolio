@@ -5,7 +5,6 @@ body {
   	-moz-background-size: cover;
   	-o-background-size: cover;
 	background-size: cover;
-	font-family: 'Oswald', sans-serif;
 }
 
 /* setting classes for alignment and positioning */
@@ -19,6 +18,10 @@ body {
 
 .margin-top-2 {
 	margin-top: 2em;
+}
+
+.margin-top-5 {
+	margin-top: 5em;
 }
 
 .margin-top-7 {
@@ -50,41 +53,62 @@ body {
 #intro {
 	height: 100vh;
 	background: rgba(0, 0, 255, 0.3);
-	padding-top: 230px;
+	padding-top: 240px;
 	letter-spacing: 3px;
+	font-family: 'Oswald', sans-serif;
 }
 
 #projects {
 	height: 100vh;
-	background: url(../images/blackbg4.jpg) no-repeat center;
+	background: url(../images/blackbg5.jpg) no-repeat center;
   	background-attachment: fixed;
 }
 
 #about {
+	background: url(../images/city.jpg) no-repeat center center;
 	background-attachment: fixed;
-	height: 100vh;
-	background: rgba(225, 225, 230, 1);
-	overflow: auto;
+	overflow: hidden;
+	padding-top: 1em;
+}
+
+.img-wrapper {
+	padding-bottom: 4em;
+	height: 45vh;
+}
+
+.img-wrapper img {
+	border: 1px solid #fff;
+}
+
+.bio {
+	background: rgba(250, 250, 250, 1);
 	line-height: 3em;
-	padding: 0 5em 2em 5em;
+	padding: 2em 6em 4em 6em;
 	font-size: 18px;
 }
 
 #features {
 	height: 60vh;
-	padding-top: 9em;
-	background: rgba(71, 4, 137, 0.4);
+	background: url(../images/blackbg4.jpg) no-repeat center;
+	background-attachment: fixed;
+	padding-top: 6em;
+	font-size: 15px;
 }
 
 .panel {
-	height: 30vh;
+	height: 34vh;
 	line-height: 5vh;
-	overflow: auto;
+	overflow: hidden;
+}
+
+.panel-heading {
+	background: rgba(76, 0, 153, 1) !important;
+	letter-spacing: 2px;
 }
 
 #contacts {
 	height: 30vh;
-	background: rgba(71, 4, 137, 0.4);
+	background: url(../images/blackbg4.jpg) no-repeat center;
 }
 
 .social {
@@ -101,15 +125,15 @@ footer {
 	height: 10vh;
 	line-height: 8.5vh;
 	letter-spacing: 2px; 
-	background: rgba(0, 0, 0, 0.9);
+	background: rgba(0, 0, 0, 1);
 	color: #fff;
 }
 
 /* setting properties for carousel & carousel slides */
 #myCarousel {
-	-moz-box-shadow: 10px 10px 29px #d9d6d9;
-	-webkit-box-shadow: 10px 10px 29px #d9d6d9;
-	box-shadow: 10px 10px 29px #d9d6d9;
+	-moz-box-shadow: 7px 10px 25px #d9d6d9;
+	-webkit-box-shadow: 7px 10px 25px #d9d6d9;
+	box-shadow: 7px 10px 25px #d9d6d9;
 	border: 2px solid #000;
 	width: 90%;
 	padding: 0;
@@ -142,7 +166,7 @@ footer {
 /* setting properties for caption of carousel slides */
 .caption {
 	display: none;
-	background: rgba(255, 255, 255, 1);
+	background: rgba(192, 192, 192, 0.9);
 	color: #000;
 	width: 100%;
 	position: absolute;
@@ -189,13 +213,11 @@ footer {
 
 /* media query for phones */
 @media (min-width: 320px) and (max-width: 480px) {
-
-	header {
-		width: auto;
-		top: 200px;
-	}
 	
 	#myCarousel {
+		-moz-box-shadow: 1px 10px 20px #d9d6d9;
+		-webkit-box-shadow: 1px 10px 20px #d9d6d9;
+		box-shadow: 1px 10px 20px #d9d6d9;
 		width: auto;
 		margin-top: 7em;
 	}
@@ -205,14 +227,22 @@ footer {
 	}
 
 	#about {
+		background-position: left bottom;
+	}
+
+	.bio {
 		font-size: 14.5px;
-		padding: 0 1em;
+		padding: 1em 1.5em;
 		line-height: 2em;
 	}
 
 	#features {
 		height: auto;
-		padding-top: 7em;
+		padding: 6em 0 2em 0;
+	}
+	
+	#contacts {
+		padding-top: 1em;
 	}
 
 	.social img {
@@ -220,7 +250,8 @@ footer {
 	}
 
 	footer {
-		letter-spacing: 1px;
+		height: auto;
+		line-height: 2em;
 	}
 
 }
@@ -232,17 +263,27 @@ footer {
 	}
 
 	.panel {
-		height: 27vh;
+		height: 30vh;
 		line-height: 7vh;
 	}
 
 	#about {
+		background-position: left bottom;
+	}
+
+	.bio {
+		font-size: 14.5px;
+		padding: 1em 1.5em;
 		line-height: 2em;
-		padding: 0 1em;
 	}
 
 	#features {
 		height: auto;
+		padding-bottom: 2em;
+	}
+
+	#contacts {
+		padding-top: 1em;
 	}
 
 }
@@ -250,18 +291,27 @@ footer {
 /* media query for tablets */
 @media (min-width: 768px) and (max-width: 1024px) {
 
-	header {
-		width: 65%;
-		top: 200px;
-	}
-
-	#about {
-		font-size: 16px;
-		padding: 0 2em;
-	}
-
 	.carousel-caption a {
 		color: #fff;
+	}
+	
+	#about {
+		background-position: left bottom;
+	}
+
+	.bio {
+		font-size: 16px;
+		padding: 1em 2em;
+		line-height: 2.2em;
+	}
+
+	.panel {
+		height: 39.8vh;
+		line-height: 1.8em;
+	}
+
+	#contacts {
+		padding-top: 1em;
 	}
 
 }
@@ -269,8 +319,21 @@ footer {
 /* media query for laptop & desktop devices */
 @media (min-width: 1025px) {
 
-	header {
-		width: 50%;
+	#intro {
+		padding-top: 260px;
 	}
+	
+	.bio {
+		padding: 1em 4em 1em 4em;
+	}
+		
+	#contacts {
+		padding-top: 2em;
+	}	
 
 }
+
+
+
+
+
