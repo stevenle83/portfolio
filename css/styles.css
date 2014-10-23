@@ -72,11 +72,10 @@ body {
 }
 
 .img-wrapper {
-	padding-bottom: 4em;
-	height: 45vh;
+	height: 50vh;
 }
 
-.img-wrapper img {
+.my-img {
 	border: 1px solid #fff;
 }
 
@@ -333,7 +332,28 @@ footer {
 
 }
 
+@media (min-width: 1800px) {
 
+	#intro {
+		padding-top: 360px;
+	}
+
+	#myCarousel {
+		margin-top: 10em;
+	}
+
+	.img-wrapper {
+		padding-top: 1em;
+	}
+
+	.my-img {
+		height: 400px;
+		width: 400px;
+	}
+
+	
+
+}
 
 
 
