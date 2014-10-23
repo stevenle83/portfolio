@@ -65,25 +65,25 @@ body {
 }
 
 #about {
-	background: url(../images/city.jpg) no-repeat center center;
+	background: url(../images/citybg.jpg) no-repeat center center;
 	background-attachment: fixed;
 	overflow: hidden;
 	padding-top: 1em;
 }
 
 .img-wrapper {
-	padding-bottom: 4em;
-	height: 45vh;
+	height: 50vh;
 }
 
-.img-wrapper img {
+.my-img {
 	border: 1px solid #fff;
 }
 
 .bio {
+	height: 50vh;
 	background: rgba(250, 250, 250, 1);
 	line-height: 3em;
-	padding: 2em 6em 4em 6em;
+	padding: 2em 6em 2em 6em;
 	font-size: 18px;
 }
 
@@ -212,14 +212,24 @@ footer {
 }
 
 /* media query for phones */
-@media (min-width: 320px) and (max-width: 480px) {
+@media (max-width: 320px) {
 	
+	body {
+		background-position: left;
+	}
+
+	#intro {	
+		padding-top: 170px;
+		font-size: 12px;
+		letter-spacing: 1px; 
+	}
+
 	#myCarousel {
-		-moz-box-shadow: 1px 10px 20px #d9d6d9;
-		-webkit-box-shadow: 1px 10px 20px #d9d6d9;
-		box-shadow: 1px 10px 20px #d9d6d9;
+		-moz-box-shadow: 1px 10px 5px #d9d6d9;
+		-webkit-box-shadow: 1px 10px 5px #d9d6d9;
+		box-shadow: 1px 10px 5px #d9d6d9;
 		width: auto;
-		margin-top: 7em;
+		margin-top: 5em;
 	}
 
 	.carousel-caption a {
@@ -227,10 +237,21 @@ footer {
 	}
 
 	#about {
-		background-position: left bottom;
+		height: auto;
+		background-position: center;
+	}
+	
+	.img-wrapper {
+		margin-top: 4em;
+	}
+	
+	.my-img {
+		width: 200px;
+		height: 200px;
 	}
 
 	.bio {
+		height: auto;
 		font-size: 14.5px;
 		padding: 1em 1.5em;
 		line-height: 2em;
@@ -238,15 +259,20 @@ footer {
 
 	#features {
 		height: auto;
-		padding: 6em 0 2em 0;
+		padding: 4.5em 0 2em 0;
 	}
 	
+	.panel {
+		height: 40vh;
+	}
+
 	#contacts {
 		padding-top: 1em;
 	}
 
 	.social img {
-		margin: 0 1em;
+		margin: 0 .5em;
+
 	}
 
 	footer {
@@ -255,85 +281,4 @@ footer {
 	}
 
 }
-
-@media (min-width: 481px) and (max-width: 767px) {
-	
-	.carousel-caption a {
-		color: #fff;
-	}
-
-	.panel {
-		height: 30vh;
-		line-height: 7vh;
-	}
-
-	#about {
-		background-position: left bottom;
-	}
-
-	.bio {
-		font-size: 14.5px;
-		padding: 1em 1.5em;
-		line-height: 2em;
-	}
-
-	#features {
-		height: auto;
-		padding-bottom: 2em;
-	}
-
-	#contacts {
-		padding-top: 1em;
-	}
-
-}
-
-/* media query for tablets */
-@media (min-width: 768px) and (max-width: 1024px) {
-
-	.carousel-caption a {
-		color: #fff;
-	}
-	
-	#about {
-		background-position: left bottom;
-	}
-
-	.bio {
-		font-size: 16px;
-		padding: 1em 2em;
-		line-height: 2.2em;
-	}
-
-	.panel {
-		height: 39.8vh;
-		line-height: 1.8em;
-	}
-
-	#contacts {
-		padding-top: 1em;
-	}
-
-}
-
-/* media query for laptop & desktop devices */
-@media (min-width: 1025px) {
-
-	#intro {
-		padding-top: 260px;
-	}
-	
-	.bio {
-		padding: 1em 4em 1em 4em;
-	}
-		
-	#contacts {
-		padding-top: 2em;
-	}	
-
-}
-
-
-
-
 
