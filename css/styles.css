@@ -16,19 +16,6 @@ body {
 	text-align: left;
 }
 
-.margin-top-2 {
-	margin-top: 2em;
-}
-
-.margin-top-5 {
-	margin-top: 5em;
-}
-
-.margin-top-7 {
-	margin-top: 7em;
-
-}
-
 /* setting color property */
 .white {
 	color: #fff !important;
@@ -53,9 +40,14 @@ body {
 #intro {
 	height: 100vh;
 	background: rgba(0, 0, 255, 0.3);
-	padding-top: 240px;
-	letter-spacing: 3px;
+	letter-spacing: 4px;
 	font-family: 'Oswald', sans-serif;
+}
+
+.header {
+	position: relative;
+	top: 40%;
+	text-shadow:5px 5px 1px #000000;
 }
 
 #projects {
@@ -73,6 +65,7 @@ body {
 
 .img-wrapper {
 	height: 50vh;
+	margin-top: 5em;
 }
 
 .my-img {
@@ -99,6 +92,9 @@ body {
 	height: 34vh;
 	line-height: 5vh;
 	overflow: hidden;
+	-moz-box-shadow: 5px 5px 3px #000;
+	-webkit-box-shadow: 5px 5px 3px #000;
+	box-shadow: 5px 5px 3px #000;
 }
 
 .panel-heading {
@@ -112,11 +108,14 @@ body {
 }
 
 .social {
-	margin-top: 3em;
+	line-height: 30vh;
 }
 
 .social img {
 	margin: 0 2em;
+	-moz-box-shadow: 3px 4px 3px #000;
+	-webkit-box-shadow: 3px 4px 3px #000;
+	box-shadow: 3px 4px 3px #000;
 }
 
 /* setting properties for footer */
@@ -131,10 +130,12 @@ footer {
 
 /* setting properties for carousel & carousel slides */
 #myCarousel {
-	-moz-box-shadow: 7px 10px 25px #d9d6d9;
-	-webkit-box-shadow: 7px 10px 25px #d9d6d9;
-	box-shadow: 7px 10px 25px #d9d6d9;
+	-moz-box-shadow: 7px 9px 10px #d9d6d9;
+	-webkit-box-shadow: 7px 9px 10px #d9d6d9;
+	box-shadow: 7px 10px 10px #d9d6d9;
 	border: 2px solid #000;
+	position: relative;
+	top: 15%;
 	width: 90%;
 	padding: 0;
 }
@@ -179,7 +180,7 @@ footer {
 
 .carousel-caption {
 	position: absolute;
-	top: 10px;
+	top: 1%;
 }
 
 /* setting hover effect classes */
@@ -209,76 +210,5 @@ footer {
   -webkit-transform: translateZ(0);
   transform: translateZ(0);
   box-shadow: 0 0 1px rgba(0, 0, 0, 0);
-}
-
-/* media query for phones */
-@media (max-width: 320px) {
-	
-	body {
-		background-position: left;
-	}
-
-	#intro {	
-		padding-top: 170px;
-		font-size: 12px;
-		letter-spacing: 1px; 
-	}
-
-	#myCarousel {
-		-moz-box-shadow: 1px 10px 5px #d9d6d9;
-		-webkit-box-shadow: 1px 10px 5px #d9d6d9;
-		box-shadow: 1px 10px 5px #d9d6d9;
-		width: auto;
-		margin-top: 5em;
-	}
-
-	.carousel-caption a {
-		color: #fff;
-	}
-
-	#about {
-		height: auto;
-		background-position: center;
-	}
-	
-	.img-wrapper {
-		margin-top: 4em;
-	}
-	
-	.my-img {
-		width: 200px;
-		height: 200px;
-	}
-
-	.bio {
-		height: auto;
-		font-size: 14.5px;
-		padding: 1em 1.5em;
-		line-height: 2em;
-	}
-
-	#features {
-		height: auto;
-		padding: 4.5em 0 2em 0;
-	}
-	
-	.panel {
-		height: 40vh;
-	}
-
-	#contacts {
-		padding-top: 1em;
-	}
-
-	.social img {
-		margin: 0 .5em;
-
-	}
-
-	footer {
-		height: auto;
-		line-height: 2em;
-	}
-
 }
 
