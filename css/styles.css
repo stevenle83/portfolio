@@ -60,12 +60,11 @@ body {
 	background: url(../images/citybg.jpg) no-repeat center center;
 	background-attachment: fixed;
 	overflow: hidden;
-	padding-top: 1em;
 }
 
 .img-wrapper {
-	height: 50vh;
 	margin-top: 5em;
+	margin-bottom: 4em;
 }
 
 .my-img {
@@ -73,25 +72,18 @@ body {
 }
 
 .bio {
-	height: 50vh;
-	background: rgba(250, 250, 250, 1);
+	background: #fff;
+	padding: 1.5em;
 	line-height: 3em;
-	padding: 2em 6em 2em 6em;
-	font-size: 18px;
+	font-size: 1.5em;
 }
 
 #features {
-	height: 60vh;
 	background: url(../images/blackbg4.jpg) no-repeat center;
 	background-attachment: fixed;
-	padding-top: 6em;
-	font-size: 15px;
 }
 
 .panel {
-	height: 34vh;
-	line-height: 5vh;
-	overflow: hidden;
 	-moz-box-shadow: 5px 5px 3px #000;
 	-webkit-box-shadow: 5px 5px 3px #000;
 	box-shadow: 5px 5px 3px #000;
@@ -103,16 +95,13 @@ body {
 }
 
 #contacts {
-	height: 30vh;
 	background: url(../images/blackbg4.jpg) no-repeat center;
 }
 
 .social {
-	line-height: 30vh;
 }
 
 .social img {
-	margin: 0 2em;
 	-moz-box-shadow: 3px 4px 3px #000;
 	-webkit-box-shadow: 3px 4px 3px #000;
 	box-shadow: 3px 4px 3px #000;
@@ -121,8 +110,6 @@ body {
 /* setting properties for footer */
 footer {
 	width: auto;
-	height: 10vh;
-	line-height: 8.5vh;
 	letter-spacing: 2px; 
 	background: rgba(0, 0, 0, 1);
 	color: #fff;
@@ -181,6 +168,10 @@ footer {
 .carousel-caption {
 	position: absolute;
 	top: 1%;
+}
+
+.carousel-caption a {
+	color: #fff;
 }
 
 /* setting hover effect classes */
