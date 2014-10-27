@@ -52,7 +52,7 @@ body {
 
 #projects {
 	height: 100vh;
-	background: url(../images/blackbg5.jpg) no-repeat center;
+	background: rgba(220, 220, 220, 0.9);
   	background-attachment: fixed;
 }
 
@@ -72,10 +72,10 @@ body {
 }
 
 .bio {
-	background: #fff;
+	background: rgba(255, 255, 255, 1);
 	padding: 1.5em;
 	line-height: 3em;
-	font-size: 1.5em;
+	font-size: 18px;
 }
 
 #features {
@@ -95,10 +95,7 @@ body {
 }
 
 #contacts {
-	background: url(../images/blackbg4.jpg) no-repeat center;
-}
-
-.social {
+	background: url(../images/blackbg4.jpg) no-repeat top;
 }
 
 .social img {
@@ -117,9 +114,9 @@ footer {
 
 /* setting properties for carousel & carousel slides */
 #myCarousel {
-	-moz-box-shadow: 7px 9px 10px #d9d6d9;
+	/*-moz-box-shadow: 7px 9px 10px #d9d6d9;
 	-webkit-box-shadow: 7px 9px 10px #d9d6d9;
-	box-shadow: 7px 10px 10px #d9d6d9;
+	box-shadow: 7px 10px 10px #d9d6d9;*/
 	border: 2px solid #000;
 	position: relative;
 	top: 15%;
@@ -154,8 +151,8 @@ footer {
 /* setting properties for caption of carousel slides */
 .caption {
 	display: none;
-	background: rgba(192, 192, 192, 0.9);
-	color: #000;
+	background: rgba(0, 0, 0, 0.9);
+	color: #fff;
 	width: 100%;
 	position: absolute;
 	bottom: 0;
@@ -171,6 +168,7 @@ footer {
 }
 
 .carousel-caption a {
+	font-size: 1.4em !important;
 	color: #fff;
 }
 

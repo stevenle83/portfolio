@@ -1,4 +1,4 @@
-/* media queries for phones with max-width of 320px */
+/* media queries for phones with max-width of 479px */
 @media (max-width: 479px) {
 	
 	body {
@@ -33,7 +33,8 @@
 	}
 
 	footer {
-
+		height: 10vh;
+		line-height: 9vh;
 	}
 
 }
@@ -65,9 +66,6 @@
 
 	footer {
 		height: 15vh;
-	}
-
-	footer p {
 		line-height: 12vh;
 	}
 
@@ -170,14 +168,14 @@
 	}
 
 	#features {
-		height: auto;
-		padding-top: 5em;
-		padding-bottom: 4.5em;
-		line-height: 1.5em;
+		padding-top: 6em;
+		padding-bottom: 5em;
+		line-height: 2em;
 	}
 
 	.panel {
-		height: 15em;
+		height: 16em;
+		overflow: auto;
 	}
 
 	#contacts {
@@ -196,11 +194,59 @@
 		height: 10vh;
 		line-height: 8vh;
 		letter-spacing: 3px;
+		font-size: 16px;
 	}
 
 }
 
-/* media queries 
+/* media queries laptops with min-width of 1025px and max-width of 1280px */
+@media screen and (min-width: 1025px) and (max-width: 1280px) {
+
+	.header p {
+		font-size: 27px;
+	}
+
+	.img-wrapper {
+		margin-top: 7em;
+	}
+
+	.bio {
+		padding: 2.5em;
+	}
+
+	#features {
+		height: 70vh;
+		padding-top: 9em;
+		line-height: 2.5em;
+	}
+	
+	.panel {
+		height: 15em;
+		overflow: auto;
+	}
+
+	#contacts {
+		height: 20vh;
+	}	
+
+	.social {
+		line-height: 20vh;
+	}
+
+	.social img {
+		margin: 1em 3em 1em 3em;
+	}
+
+	footer {
+		height: 10vh;
+	}
+
+	footer p {
+		line-height: 8vh;
+		letter-spacing: 4px;
+	}
+
+} 
 
 
 
