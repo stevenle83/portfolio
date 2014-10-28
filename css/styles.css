@@ -81,9 +81,9 @@ body {
 }
 
 .panel {
-	-moz-box-shadow: 5px 5px 3px #000;
-	-webkit-box-shadow: 5px 5px 3px #000;
-	box-shadow: 5px 5px 3px #000;
+	-moz-box-shadow: 5px 5px 5px #000;
+	-webkit-box-shadow: 5px 5px 5px #000;
+	box-shadow: 5px 5px 5px #000;
 }
 
 .panel-heading {
@@ -156,7 +156,7 @@ footer {
 }
 
 .caption a {
-	color: #000;
+	color: #fff;
 }
 
 .carousel-caption {

@@ -6,7 +6,7 @@
 	}
 
 	#projects {
-		background: rgba(0, 0, 0, .8);
+		background: transparent;
 	}
 	
 	.header {
@@ -233,19 +233,15 @@
 		background: transparent;
 	}
 
-	.img-wrapper {
-		margin-top: 6em;
-	}
-
 	.bio {
 		font-size: 18px;
 		line-height: 2.5em;
-		padding: 2em 4em 0em 4em;
+		padding: 1em 3em 0em 3em;
 	}
 
 	#features {
 		height: 70vh;
-		padding-top: 13%;
+		padding-top: 12%;
 		line-height: 2.5em;
 	}
 	
