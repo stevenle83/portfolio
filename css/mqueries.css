@@ -1,4 +1,4 @@
-/* media queries for phones with max-width of 479px */
+/* media query for phones with max-width of 479px */
 @media (max-width: 479px) {
 	
 	body {
@@ -20,6 +20,8 @@
 
 	.bio {
 		font-size: 15px;
+		line-height: 2em;
+		padding: 2em;
 	}
 
 	#features {
@@ -46,11 +48,13 @@
 
 }
 
-/* media queries for phones with min-width of 480px and max-width of 599px */
+/* media query for phones with min-width of 480px and max-width of 599px */
 @media screen and (min-width: 480px) and (max-width: 599px) {
 
 	.bio {
 		font-size: 15px;
+		line-height: 2em;
+		padding: 2em;
 	}
 
 	#features {
@@ -77,32 +81,25 @@
 
 }
 
-/* media queries for small tablets in portrait mode */
-@media screen and (min-width: 600px) and (max-height: 800px) and (orientation: portrait) {
-	
+/* media query for tablets with min-width of 600px and max-width of 767px */
+@media (min-width: 600px) and (max-width: 767px) {
+
 	body {
 		background-position: left center;
 	}
 
-	.header {
-		top: 45%;
-		letter-spacing: 5px;
-	}
-
 	.header h1 {
-		font-size: 3em !important;
+		font-size: 3.5em !important;
 	}
-
-	.lead {
-		font-size: 2em !important;
-	}
-
-	#projects {
-		background: rgba(0, 0, 0, .8);
+	
+	.header p {
+		font-size: 2.5em !important;
 	}
 
 	.bio {
 		font-size: 16px;
+		line-height: 2em;
+		padding: 2em;
 	}
 
 	#features {
@@ -130,44 +127,8 @@
 
 }
 
-/* media queries for tablets with min-width of 600px and max-width of 767px */
-@media screen and (min-width: 601px) and (max-width: 767px) {
-
-	.lead {
-		font-size: 25px !important;
-	}	
-
-	.bio {
-		font-size: 16px;
-	}
-
-	#features {
-		padding-top: 4em;
-		padding-bottom: 2em;
-		line-height: 2em;
-	}
-
-	#contacts {
-		height: 20vh;
-	}
-
-	.social {
-		line-height: 20vh;
-	}	
-
-	.social img {
-		margin: 0 3em 0 3em;
-	}
-
-	footer {
-		line-height: 8vh;
-		letter-spacing: 4px;
-	}
-
-}
-
-/* media queries for tablets with min-width of 768px and max-width of 1024px */
-@media screen and (min-width: 768px) and (max-width: 1024px) {
+/* media query for small devices (tablets, 768px and up) */
+@media (min-width: 768px) {
 
 	.header h1 {
 		font-size: 3.5em !important;
@@ -179,11 +140,14 @@
 
 	.bio {
 		font-size: 16px;
+		line-height: 2em;
+		padding: 1.5em 2em;
 	}
 
 	#features {
-		height: 70vh;
-		padding-top: 13%;
+		height: auto;
+		padding-top: 15%;
+		padding-bottom: 12%;
 		line-height: 2em;
 	}
 
@@ -201,19 +165,19 @@
 	}
 
 	.social img {
-		margin: 1em 3em 1em 3em;
+		margin: 0 4em;
 	}
 
 	footer {
-		line-height: 10vh;
+		line-height: 8vh;
 		letter-spacing: 3px;
 		font-size: 16px;
 	}
 
 }
 
-/* media queries for tablets in portrait mode */
-@media screen and (min-width: 768px) and (max-height: 1024px) and (orientation: portrait) {
+/* media query for medium devices (laptops, small desktops, 992px and up) */
+@media (min-width: 992px) {
 
 	body {
 		background-position: left center;
@@ -226,25 +190,36 @@
 	.header p {
 		font-size: 2.5em !important;
 	}
-
+	
 	#projects {
-		background: rgba(0, 0, 0, .8);
+		background: transparent;
 	}
 
+	#about {
+		height: 100vh;
+	}
+	
+	.img-wrapper {
+		height: 50vh;
+		padding-top: 4em;
+	}
+
+	.bio {
+		height: 50vh;
+		font-size: 17px;
+		line-height: 2em;
+		padding: 2.5em 3em 0em 3em;
+	}
+	
 	#features {
-		height: auto;
-		padding-bottom: 10%;
-	}
-
-	footer {
-		line-height: 8vh;
-		letter-spacing: 3px;
-	}
+		height: 70vh;
+		padding-bottom: 0;
+	}	
 
 }
 
-/* media queries laptops with min-width of 1025px and max-width of 1280px */
-@media screen and (min-width: 1025px) and (max-width: 1280px) {
+/* media query for large devices (larger laptops, desktops, 1200px and up) */
+@media (min-width: 1200px) {
 
 	.header h1 {
 		font-size: 3.5em !important;
@@ -254,22 +229,28 @@
 		font-size: 2.5em !important;
 	}
 
+	#projects {
+		background: transparent;
+	}
+
 	.img-wrapper {
-		margin-top: 7em;
+		margin-top: 6em;
 	}
 
 	.bio {
-		padding: 2.5em;
+		font-size: 18px;
+		line-height: 2.5em;
+		padding: 2em 4em 0em 4em;
 	}
 
 	#features {
 		height: 70vh;
-		padding-top: 10%;
+		padding-top: 13%;
 		line-height: 2.5em;
 	}
 	
 	.panel {
-		height: 15em;
+		height: 16em;
 		overflow: auto;
 	}
 
@@ -282,7 +263,7 @@
 	}
 
 	.social img {
-		margin: 1em 3em 1em 3em;
+		margin: 0 5em;
 	}
 
 	footer {
@@ -292,7 +273,49 @@
 
 } 
 
+/* media query for xtra-large screens (1500px and up) */
+@media (min-width: 1500px) {
 
+	.bio {
+		font-size: 19px;
+		line-height: 3em;
+		padding: 2em 6em 0 6em;		
+	}
+
+	#features {
+		padding-top: 10%;
+	}
+
+	.panel {
+		margin: 0 4em;
+	}
+
+	.social img {
+		margin: 0 6em;
+	}
+
+}
+
+/* media query for xtra-large screens (1700px and up) */
+@media (min-width: 1700px) {
+
+	#about {
+		background: url(../images/city.jpg) no-repeat center center;
+		background-attachment: fixed;
+		overflow: hidden;
+	}
+
+	.bio {
+		font-size: 20px;
+		line-height: 3em;
+		padding: 2em 6em 0 6em;	
+	}
+
+	.social img {
+		margin: 0 7em;
+	}
+
+}
 
 
 

@@ -39,7 +39,7 @@ body {
 
 #intro {
 	height: 100vh;
-	background: rgba(0, 0, 255, 0.3);
+	background: rgba(0, 0, 255, 0.4);
 	letter-spacing: 4px;
 	font-family: 'Oswald', sans-serif;
 }
@@ -73,9 +73,6 @@ body {
 
 .bio {
 	background: rgba(255, 255, 255, 1);
-	padding: 1.5em;
-	line-height: 3em;
-	font-size: 18px;
 }
 
 #features {
