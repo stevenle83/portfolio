@@ -5,6 +5,14 @@
 		background-position: left center;
 	}
 
+	#projects {
+		background: rgba(0, 0, 0, .8);
+	}
+	
+	.header {
+		top: 35%;
+	}
+
 	.my-img {
 		width: 250px;
 		height: 250px;
@@ -29,12 +37,11 @@
 	}
 	
 	.social img {
-		margin: 0 .5em 0 .5em;
+		margin: 0 .8em 0 .8em;
 	}
 
 	footer {
-		height: 10vh;
-		line-height: 9vh;
+		line-height: 7vh;
 	}
 
 }
@@ -65,7 +72,6 @@
 	}
 
 	footer {
-		height: 15vh;
 		line-height: 12vh;
 	}
 
@@ -74,13 +80,25 @@
 /* media queries for small tablets in portrait mode */
 @media screen and (min-width: 600px) and (max-height: 800px) and (orientation: portrait) {
 	
+	body {
+		background-position: left center;
+	}
+
 	.header {
 		top: 45%;
 		letter-spacing: 5px;
 	}
 
+	.header h1 {
+		font-size: 3em !important;
+	}
+
 	.lead {
-		font-size: 25px !important;
+		font-size: 2em !important;
+	}
+
+	#projects {
+		background: rgba(0, 0, 0, .8);
 	}
 
 	.bio {
@@ -106,10 +124,6 @@
 	}
 
 	footer {
-		height: 10vh;
-	}
-
-	footer p {
 		line-height: 8vh;
 		letter-spacing: 4px;
 	}
@@ -146,10 +160,6 @@
 	}
 
 	footer {
-		height: 10vh;
-	}
-
-	footer p {
 		line-height: 8vh;
 		letter-spacing: 4px;
 	}
@@ -159,8 +169,12 @@
 /* media queries for tablets with min-width of 768px and max-width of 1024px */
 @media screen and (min-width: 768px) and (max-width: 1024px) {
 
-	.lead {
-		font-size: 25px !important;
+	.header h1 {
+		font-size: 3.5em !important;
+	}
+
+	.header p {
+		font-size: 2em !important;
 	}
 
 	.bio {
@@ -168,8 +182,8 @@
 	}
 
 	#features {
-		padding-top: 6em;
-		padding-bottom: 5em;
+		height: 70vh;
+		padding-top: 13%;
 		line-height: 2em;
 	}
 
@@ -191,10 +205,40 @@
 	}
 
 	footer {
-		height: 10vh;
-		line-height: 8vh;
+		line-height: 10vh;
 		letter-spacing: 3px;
 		font-size: 16px;
+	}
+
+}
+
+/* media queries for tablets in portrait mode */
+@media screen and (min-width: 768px) and (max-height: 1024px) and (orientation: portrait) {
+
+	body {
+		background-position: left center;
+	}
+
+	.header h1 {
+		font-size: 4em !important;
+	}
+
+	.header p {
+		font-size: 2.5em !important;
+	}
+
+	#projects {
+		background: rgba(0, 0, 0, .8);
+	}
+
+	#features {
+		height: auto;
+		padding-bottom: 10%;
+	}
+
+	footer {
+		line-height: 8vh;
+		letter-spacing: 3px;
 	}
 
 }
@@ -202,8 +246,12 @@
 /* media queries laptops with min-width of 1025px and max-width of 1280px */
 @media screen and (min-width: 1025px) and (max-width: 1280px) {
 
+	.header h1 {
+		font-size: 3.5em !important;
+	}
+
 	.header p {
-		font-size: 27px;
+		font-size: 2.5em !important;
 	}
 
 	.img-wrapper {
@@ -216,7 +264,7 @@
 
 	#features {
 		height: 70vh;
-		padding-top: 9em;
+		padding-top: 10%;
 		line-height: 2.5em;
 	}
 	
@@ -238,11 +286,7 @@
 	}
 
 	footer {
-		height: 10vh;
-	}
-
-	footer p {
-		line-height: 8vh;
+		line-height: 10vh;
 		letter-spacing: 4px;
 	}
 
