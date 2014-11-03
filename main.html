@@ -3,11 +3,11 @@
 	<head>
 		<title>Portfolio Page</title>
 		<meta charset="UTF-8">
-		<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
+		<link rel="stylesheet" href='http://fonts.googleapis.com/css?family=Oswald' type='text/css'>
 		<link rel="stylesheet" href="css/styles.css">
 		<link rel="stylesheet" href="css/mqueries.css">
-		<link rel="stylesheet" href='http://fonts.googleapis.com/css?family=Oswald' type='text/css'>
 		<link rel="stylesheet" href="css/hover-min.css" media="all">
 	</head>
 
@@ -40,229 +40,219 @@
 			</div> <!--end navbar-collapse-->
 
 		</nav> <!--end nav-->
-		
-		<div class="main">
 
-			<section id="intro">
-				<div class="header center white">
+		<section id="intro">
+
+			<div class="header center white">
 				<h1>Front End Developer</h1>
 				<p class="lead">Let's Build Something</p>	
-				</div>
-			</section> <!--end intro-->
+			</div>
 
-			<section class="container" id="projects">
-				
-				<div class="carousel slide container" id="myCarousel" data-ride="carousel" data-interval="3000">
+		</section> <!--end intro-->
 
-					<ol class="carousel-indicators hidden-md hidden-lg">
-
-			            <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
-			            <li data-target="#myCarousel" data-slide-to="1"></li>
-			            <li data-target="#myCarousel" data-slide-to="2"></li>
-			            <li data-target="#myCarousel" data-slide-to="3"></li>
-
-			        </ol>  <!--end carousel-indicators-->  
-					
-					<div class="carousel-inner center">
-
-						<div class="item active" id="slide1">
-
-							<div class="carousel-caption hidden-md hidden-lg">
-
-								<p><a href="http://stevenle83.github.io/quiz-app/main.html" target="_blank">demo</a> || <a href="https://github.com/stevenle83/quiz-app" target="_blank">source</a></p>
-
-							</div>
-
-							<div class="caption container hidden-xs hidden-sm">
-								
-								<h4>The Walking Dead Trivia</h4>
-								<hr>
-								<p class="lead">This is an interactive multiple choice quiz designed using Javascript and jQuery.</p>
-								<p><a href="http://stevenle83.github.io/quiz-app/main.html" target="_blank">demo</a> || <a href="https://github.com/stevenle83/quiz-app" target="_blank">source</a></p>
-
-							</div> 
-
-						</div> <!--end slide1-->
-						
-						<div class="item" id="slide2">
-
-							<div class="carousel-caption hidden-md hidden-lg">
-
-								<p><a href="http://stevenle83.github.io/shopping-list/main.html" target="_blank">demo</a> || <a href="https://github.com/stevenle83/shopping-list" target="_blank">source</a></p>
-								
-							</div>
-
-							<div class="caption container hidden-xs hidden-sm">
-
-								<h4>Shopping List App</h4>
-								<hr>
-								<p class="lead">An interactive web application which allows you to add and remove items to make a list using jQuery.</p>
-								<p><a href="http://stevenle83.github.io/shopping-list/main.html" target="_blank">demo</a> || <a href="https://github.com/stevenle83/shopping-list" target="_blank">source</a></p>
-								
-							</div>
-
-						</div> <!--end slide2-->
-
-						<div class="item" id="slide3">
-
-							<div class="carousel-caption hidden-md hidden-lg">
-
-								<p><a href="http://stevenle83.github.io/movie-wiz/main.html" target="_blank">demo</a> || <a href="https://github.com/stevenle83/movie-wiz" target="_blank">source</a></p>
-								
-							</div>
-
-							<div class="caption container hidden-xs hidden-sm">
-								
-								<h4>Moive Wiz</h4>
-								<hr>	
-								<p class="lead">Using AJAX calls to Rotten Tomatoes' database, this application allows users to search for general information on any movie by title or keywords.</p>
-								<p><a href="http://stevenle83.github.io/movie-wiz/main.html" target="_blank">demo</a> || <a href="https://github.com/stevenle83/movie-wiz" target="_blank">source</a></p>
-								
-							</div>
-
-						</div> <!--end slide3-->
-
-						<div class="item" id="slide4">
-
-							<div class="carousel-caption hidden-md hidden-lg">
-
-								<p><a href="http://stevenle83.github.io/hot-or-cold/index.html" target="_blank">demo</a> || <a href="https://github.com/stevenle83/hot-or-cold" target="_blank">source</a></p>
-								
-							</div>
-
-							<div class="caption container hidden-xs hidden-sm">
-								
-								<h4>Hot or Cold</h4>
-								<hr>
-								<p class="lead">A number guessing game created with Javascript and jQuery.</p>
-								<p><a href="http://stevenle83.github.io/hot-or-cold/index.html" target="_blank">demo</a> || <a href="https://github.com/stevenle83/hot-or-cold" target="_blank">source</a></p>
-								
-							</div>
-
-						</div> <!--end slide4-->
-
-					</div> <!--end carousel-inner-->
-					
-					<!--carousel left and right controls-->	
-					<a href="#myCarousel" class="left carousel-control" data-slide="prev"><span class="glyphicon glyphicon-chevron-left"></span></a>
-				    <a href="#myCarousel" class="right carousel-control" data-slide="next"><span class="glyphicon glyphicon-chevron-right"></span></a>
-
-				</div> <!--end carousel-->		
-
-			</section> <!--end projects-->
-
-			<section class="center" id="about">
-				
-				<div class="img-wrapper">	
-
-					<img src="images/me.png" class="my-img img-circle" alt="circle-img" width="300" height="300">
-
-				</div> <!--end img-wrapper-->
-					
-				<div class="container-fluid bio left">
-								
-					<p>Hi, my name is Steven Le and I am working out of New Orleans, Louisiana. I was a small business owner for 7 years, but felt that my job was just not fullfilling. After selling my business, I decided to pursue a career as a front-end web developer. I started off at Codeacademy then moved on to complete Thinkful's front-end web development course. I have a passion for coding, and solving problems to create something from nothing. I am still learning more everyday, and striving to be a better developer. Contact me if you would like to chat, or work on a project.</p>
-								
-				</div> <!--end bio-->
-
-			</section> <!--end about-->	 
+		<section class="container" id="projects">
 			
-			<section id="features">
+			<div class="carousel slide container" id="myCarousel" data-ride="carousel" data-interval="3000">
 
-				<div class="container-fluid">
+				<ol class="carousel-indicators hidden-md hidden-lg">
 
-					<div class="row">
+		            <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+		            <li data-target="#myCarousel" data-slide-to="1"></li>
+		            <li data-target="#myCarousel" data-slide-to="2"></li>
+		            <li data-target="#myCarousel" data-slide-to="3"></li>
 
-						<div class="col-xs-12 col-sm-4">
-
-							<div class="panel panel-default" id="resp">
-									
-								<div class="panel-heading center">
-										
-									<h3 class="panel-title white">Responsivness</h3>
-
-								</div> <!--end panel-heading-->
-									
-								<div class="panel-body">
-
-									<p>Websites and applications are built to fit on any device with full functionality. Whether you're using a phone, tablet, laptop, or desktop, your product will be at its full potential.</p>
-
-								</div> <!--end panel-body-->	
-
-							</div> <!--end panel-resp-->
-
-						</div> <!--end col-->
-
-						<div class="col-xs-12 col-sm-4">
-
-							<div class="panel panel-default" id="ui">
-									
-								<div class="panel-heading center">
-										
-									<h3 class="panel-title white">UI Focused</h3>
-
-								</div> <!--end panel-heading-->
-									
-								<div class="panel-body">
-
-									<p>Creating websites and applications that are user friendly. Focusing on a smooth and interactive user interface with great performance.</p>
-
-								</div> <!--end panel-body-->	
-
-							</div> <!--end panel-UI-->
-
-						</div> <!--end col-->
-
-						<div class="col-xs-12 col-sm-4">
-
-							<div class="panel panel-default" id="skills">
-									
-								<div class="panel-heading center">
-										
-									<h3 class="panel-title white">Skills</h3>
-
-								</div> <!--end panel-heading-->
-									
-								<div class="panel-body">
-
-									<ul>
-										<li>HTML5</li>
-										<li>CSS3 (Bootstrap 3)</li>
-										<li>Javascript (jQuery)</li>
-										<li>AJAX</li>
-										<li>Git/Github</li>
-									</ul>
-
-								</div> <!--end panel-body-->	
-
-							</div> <!--end panel-skills-->
-
-						</div> <!--end col-->
-
-					</div> <!--end row-->
-
-				</div> <!--end container-->
-
-			</section> <!--end feature-->	
-
-			<section id="contacts">
+		        </ol>  <!--end carousel-indicators-->  
 				
-				<div class="social row center">
+				<div class="carousel-inner center">
+
+					<div class="item active" id="slide1">
+
+						<div class="carousel-caption hidden-md hidden-lg">
+
+							<p><a href="http://stevenle83.github.io/quiz-app/main.html" target="_blank">demo</a> || <a href="https://github.com/stevenle83/quiz-app" target="_blank">source</a></p>
+
+						</div>
+
+						<div class="caption container hidden-xs hidden-sm">
+							
+							<h4>The Walking Dead Trivia</h4>
+							<hr>
+							<p class="lead">This is an interactive multiple choice quiz designed using Javascript and jQuery.</p>
+							<p><a href="http://stevenle83.github.io/quiz-app/main.html" target="_blank">demo</a> || <a href="https://github.com/stevenle83/quiz-app" target="_blank">source</a></p>
+
+						</div> 
+
+					</div> <!--end slide1-->
+					
+					<div class="item" id="slide2">
+
+						<div class="carousel-caption hidden-md hidden-lg">
+
+							<p><a href="http://stevenle83.github.io/shopping-list/main.html" target="_blank">demo</a> || <a href="https://github.com/stevenle83/shopping-list" target="_blank">source</a></p>
+							
+						</div>
+
+						<div class="caption container hidden-xs hidden-sm">
+
+							<h4>Shopping List App</h4>
+							<hr>
+							<p class="lead">An interactive web application which allows you to add and remove items to make a list using jQuery.</p>
+							<p><a href="http://stevenle83.github.io/shopping-list/main.html" target="_blank">demo</a> || <a href="https://github.com/stevenle83/shopping-list" target="_blank">source</a></p>
+							
+						</div>
+
+					</div> <!--end slide2-->
+
+					<div class="item" id="slide3">
+
+						<div class="carousel-caption hidden-md hidden-lg">
+
+							<p><a href="http://stevenle83.github.io/movie-wiz/main.html" target="_blank">demo</a> || <a href="https://github.com/stevenle83/movie-wiz" target="_blank">source</a></p>
+							
+						</div>
+
+						<div class="caption container hidden-xs hidden-sm">
+							
+							<h4>Moive Wiz</h4>
+							<hr>	
+							<p class="lead">Using AJAX calls to Rotten Tomatoes' database, this application allows users to search for general information on any movie by title or keywords.</p>
+							<p><a href="http://stevenle83.github.io/movie-wiz/main.html" target="_blank">demo</a> || <a href="https://github.com/stevenle83/movie-wiz" target="_blank">source</a></p>
+							
+						</div>
+
+					</div> <!--end slide3-->
+
+					<div class="item" id="slide4">
+
+						<div class="carousel-caption hidden-md hidden-lg">
+
+							<p><a href="http://stevenle83.github.io/hot-or-cold/index.html" target="_blank">demo</a> || <a href="https://github.com/stevenle83/hot-or-cold" target="_blank">source</a></p>
+							
+						</div>
+
+						<div class="caption container hidden-xs hidden-sm">
+							
+							<h4>Hot or Cold</h4>
+							<hr>
+							<p class="lead">A number guessing game created with Javascript and jQuery.</p>
+							<p><a href="http://stevenle83.github.io/hot-or-cold/index.html" target="_blank">demo</a> || <a href="https://github.com/stevenle83/hot-or-cold" target="_blank">source</a></p>
+							
+						</div>
+
+					</div> <!--end slide4-->
+
+				</div> <!--end carousel-inner-->
 				
-					<div class="col-xs-12">
+				<!--carousel left and right controls-->	
+				<a href="#myCarousel" class="left carousel-control" data-slide="prev"><span class="glyphicon glyphicon-chevron-left"></span></a>
+			    <a href="#myCarousel" class="right carousel-control" data-slide="next"><span class="glyphicon glyphicon-chevron-right"></span></a>
 
-						<a href="mailto:lesteven1983@gmail.com"><img class="pulse-grow" src="images/email.png" alt="email" width="50" height="50"></a>
-						<a href="https://www.facebook.com/steven.le.12177276" target="_blank"><img class="pulse-grow" src="images/facebook.png" alt="facebook" width="50" height="50"></a>
-						<a href="https://www.linkedin.com/nhome/?trk=" target="_blank"><img class="pulse-grow" src="images/linkedin.png" alt="linkedin" width="50" height="50"></a>
-						<a href="https://twitter.com/" target="_blank"><img class="pulse-grow" src="images/twitter.png" alt="twitter" width="50" height="50"></a>
+			</div> <!--end carousel-->		
 
-					</div> <!--end col-xs-12-->	
+		</section> <!--end projects-->
 
-				</div> <!--end social-->
+		<section class="center" id="about">
+			
+			<div class="img-wrapper">	
 
-			</section> <!--end contacts-->
+				<img src="images/me.png" class="my-img img-circle" alt="circle-img" width="300" height="300">
 
-		</div> <!--end main-->	
+			</div> <!--end img-wrapper-->
+				
+			<div class="container-fluid bio left">
+							
+				<p>Hi, my name is Steven Le and I am working out of New Orleans, Louisiana. I was a small business owner for 7 years, but felt that my job was just not fullfilling. After selling my business, I decided to pursue a career as a front-end web developer. I started off at Codeacademy then moved on to complete Thinkful's front-end web development course. I have a passion for coding, and solving problems to create something from nothing. I am still learning more everyday, and striving to be a better developer. Contact me if you would like to chat, or work on a project.</p>
+							
+			</div> <!--end bio-->
+
+		</section> <!--end about-->	 
+		
+		<section id="features">
+
+			<div class="container-fluid">
+
+				<div class="row">
+
+					<div class="col-xs-12 col-sm-4">
+
+						<div class="panel panel-default" id="resp">
+								
+							<div class="panel-heading center">
+									
+								<h3 class="panel-title white">Responsivness</h3>
+
+							</div> <!--end panel-heading-->
+								
+							<div class="panel-body">
+
+								<p>Websites and applications are built to fit on any device with full functionality. Whether you're using a phone, tablet, laptop, or desktop, your product will be at its full potential.</p>
+
+							</div> <!--end panel-body-->	
+
+						</div> <!--end panel-resp-->
+
+					</div> <!--end col-->
+
+					<div class="col-xs-12 col-sm-4">
+
+						<div class="panel panel-default" id="ui">
+								
+							<div class="panel-heading center">
+									
+								<h3 class="panel-title white">UI Focused</h3>
+
+							</div> <!--end panel-heading-->
+								
+							<div class="panel-body">
+
+								<p>Creating websites and applications that are user friendly. Focusing on a smooth and interactive user interface with great performance.</p>
+
+							</div> <!--end panel-body-->	
+
+						</div> <!--end panel-UI-->
+
+					</div> <!--end col-->
+
+					<div class="col-xs-12 col-sm-4">
+
+						<div class="panel panel-default" id="skills">
+								
+							<div class="panel-heading center">
+									
+								<h3 class="panel-title white">Skills</h3>
+
+							</div> <!--end panel-heading-->
+								
+							<div class="panel-body">
+
+								<ul>
+									<li>HTML5</li>
+									<li>CSS3 (Bootstrap 3)</li>
+									<li>Javascript (jQuery)</li>
+									<li>AJAX</li>
+									<li>Git/Github</li>
+								</ul>
+
+							</div> <!--end panel-body-->	
+
+						</div> <!--end panel-skills-->
+
+					</div> <!--end col-->
+
+				</div> <!--end row-->
+
+			</div> <!--end container-->
+
+		</section> <!--end feature-->	
+
+		<section id="contacts" class="social center">
+			
+			<a href="mailto:lesteven1983@gmail.com"><img class="pulse-grow" src="images/email.png" alt="email" width="50" height="50"></a>
+			<a href="https://www.facebook.com/steven.le.12177276" target="_blank"><img class="pulse-grow" src="images/facebook.png" alt="facebook" width="50" height="50"></a>
+			<a href="https://www.linkedin.com/nhome/?trk=" target="_blank"><img class="pulse-grow" src="images/linkedin.png" alt="linkedin" width="50" height="50"></a>
+			<a href="https://twitter.com/" target="_blank"><img class="pulse-grow" src="images/twitter.png" alt="twitter" width="50" height="50"></a>
+
+		</section> <!--end contacts-->
 
 		<footer class="container-fluid center">
 

@@ -1,200 +1,119 @@
-/* setting properties for body */
-body {
-	background: url(../images/responsivebg.jpg) no-repeat center center fixed; 
-	-webkit-background-size: cover;
-  	-moz-background-size: cover;
-  	-o-background-size: cover;
-	background-size: cover;
+body,html {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100%;
 }
 
-/* setting classes for alignment and positioning */
 .center {
-	text-align: center;
+  text-align: center;
 }
 
 .left {
-	text-align: left;
+  text-align: left;
 }
 
-/* setting color property */
 .white {
-	color: #fff !important;
+  color: #fff !important;
 }
 
-/* setting properties for navabr */
 .navbar {
-	background: rgba(0, 0, 0, 0.9);
-	border: transparent;
-}
-
-/* setting properties for section divs & classes */
-#intro, #projects, #about, #contacts {
-	width: auto;
-	position: relative;
-	-webkit-background-size: cover;
-  	-moz-background-size: cover;
-  	-o-background-size: cover;
-	background-size: cover;
+  background: rgba(0, 0, 0, 0.9);
+  border: transparent;
 }
 
 #intro {
-	height: 100vh;
-	background: rgba(0, 0, 255, 0.4);
-	letter-spacing: 4px;
-	font-family: 'Oswald', sans-serif;
+  height: 800px;
+  letter-spacing: 4px;
+  font-family: 'Oswald', sans-serif;
 }
 
 .header {
-	position: relative;
-	top: 40%;
-	text-shadow:5px 5px 1px #000000;
+  position: relative;
+  top: 35%;
+  text-shadow:3px 5px 1px #000000;
 }
 
 #projects {
-	height: 100vh;
-	background: rgba(51, 0, 102, 0.7);
-  	background-attachment: fixed;
+  width: auto;
+  height: 800px;
+  background: rgba(245,245,245,1);
 }
 
-#about {
-	background: url(../images/citybg.jpg) no-repeat center center;
-	background-attachment: fixed;
-	overflow: hidden;
-}
-
-.img-wrapper {
-	margin-top: 5em;
-	margin-bottom: 4em;
-}
-
-.my-img {
-	border: 1px solid #fff;
-}
-
-.bio {
-	background: rgba(255, 255, 255, 1);
-}
-
-#features {
-	background: url(../images/blackbg4.jpg) no-repeat center;
-	background-attachment: fixed;
-}
-
-.panel {
-	-moz-box-shadow: 5px 5px 5px #000;
-	-webkit-box-shadow: 5px 5px 5px #000;
-	box-shadow: 5px 5px 5px #000;
-}
-
-.panel-heading {
-	background: rgba(76, 0, 153, 1) !important;
-	letter-spacing: 2px;
-}
-
-#contacts {
-	background: url(../images/blackbg4.jpg) no-repeat top;
-}
-
-.social img {
-	-moz-box-shadow: 3px 4px 3px #000;
-	-webkit-box-shadow: 3px 4px 3px #000;
-	box-shadow: 3px 4px 3px #000;
-}
-
-/* setting properties for footer */
-footer {
-	width: auto;
-	letter-spacing: 2px; 
-	background: rgba(0, 0, 0, 1);
-	color: #fff;
-}
-
-/* setting properties for carousel & carousel slides */
 #myCarousel {
-	/*-moz-box-shadow: 7px 9px 10px #d9d6d9;
-	-webkit-box-shadow: 7px 9px 10px #d9d6d9;
-	box-shadow: 7px 10px 10px #d9d6d9;*/
-	border: 2px solid #000;
-	position: relative;
-	top: 15%;
-	width: 90%;
-	padding: 0;
+  position: relative;
+  top: 17%;
+  width: 90%;
+  padding: 0;
 }
 
 #slide1, #slide2, #slide3, #slide4 {
-	height: 70vh;
+  height: 500px;
 }
 
-#slide1 {
-	background: url(../images/quiz.png) no-repeat center;
-	background-size: cover;
-}
-
-#slide2 {
-	background: url(../images/shopping-list.png) no-repeat center;
-	background-size: cover;
-}
-
-#slide3 {
-	background: url(../images/movie.png) no-repeat center;
-	background-size: cover;
-}
-
-#slide4 {
-	background: url(../images/hot-cold.png) no-repeat center;
-	background-size: cover;
-}
-
-/* setting properties for caption of carousel slides */
 .caption {
-	display: none;
-	background: rgba(0, 0, 0, 0.9);
-	color: #fff;
-	width: 100%;
-	position: absolute;
-	bottom: 0;
+  display: none;
+  background: rgba(0,0,0,0.9);
+  color: #fff;
+  width: 100%;
+  position: absolute;
+  bottom: 0;
 }
 
 .caption a {
-	color: #fff;
+ color: #fff;
 }
 
 .carousel-caption {
-	position: absolute;
-	top: 1%;
+ position: absolute;
+ top: 1%;
 }
 
 .carousel-caption a {
-	font-size: 1.4em !important;
-	color: #fff;
+  font-size: 1.4em !important;
+  color: #fff;
 }
 
-/* setting hover effect classes */
-.float:hover {
-	text-decoration: none;
-	-webkit-transform: translateY(-5px);
-  	-ms-transform: translateY(-5px);
-  	-o-transform: translateY(-5px);
-  	transform: translateY(-5px);
+#about {
+  background: url(../images/aboutbg.jpg) no-repeat center center;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  overflow: hidden;
 }
 
-.pulse-grow:hover, .pulse-grow:focus, .pulse-grow:active {
-  -webkit-animation-name: pulse-grow;
-  animation-name: pulse-grow;
-  -webkit-animation-duration: 0.3s;
-  animation-duration: 0.3s;
-  -webkit-animation-timing-function: linear;
-  animation-timing-function: linear;
-  -webkit-animation-iteration-count: infinite;
-  animation-iteration-count: infinite;
-  -webkit-animation-direction: alternate;
-  animation-direction: alternate;
+.img-wrapper {
+  margin-top: 4em;
+  margin-bottom: 4em;
 }
 
-.pulse-grow {
-  display: inline-block;
-  -webkit-transform: translateZ(0);
-  transform: translateZ(0);
-  box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+.my-img {
+  border: 1px solid #fff;
 }
 
+.bio {
+  background: rgba(255, 255, 255, 1);
+}
+
+.panel {
+  -moz-box-shadow: 5px 5px 5px #000;
+  -webkit-box-shadow: 5px 5px 5px #000;
+  box-shadow: 5px 5px 5px #000;
+}
+
+.panel-heading {
+  background: rgba(51,0,102,.9) !important;
+  letter-spacing: 2px;
+}
+
+#contacts {
+  background: rgba(51,0,102,.9);
+}
+
+footer {
+  width: auto;
+  letter-spacing: 2px; 
+  background: rgba(0,0,0,1);
+  color: #fff;
+}

@@ -1,318 +1,582 @@
 /* media query for phones with max-width of 479px */
 @media (max-width: 479px) {
-	
-	body {
-		background-position: left center;
-	}
 
-	#projects {
-		background: transparent;
-	}
-	
-	.header {
-		top: 35%;
-	}
+#intro {
+  height: 480px;
+  background: url(../images/small/introbg.jpg) no-repeat 50% 90%;
+  background-size: 100%;
+}
 
-	.my-img {
-		width: 250px;
-		height: 250px;
-	}
+#projects {
+ height: 480px;
+ background: rgba(245,245,245,1);
+}
 
-	.bio {
-		font-size: 15px;
-		line-height: 2em;
-		padding: 2em;
-	}
+#about {
+  background: rgba(0,0,0,1);
+}
 
-	#features {
-		padding-top: 4.5em;
-		padding-bottom: 2em;
-		line-height: 2em;
-	}
+.header {
+  top: 20%;
+  color: #000 !important;
+  text-shadow: none;
+}
 
-	#contacts {
-		height: 25vh;
-	}
+#slide1, #slide2, #slide3, #slide4 {
+  height: 336px;
+}
 
-	.social {
-		line-height: 25vh;
-	}
-	
-	.social img {
-		margin: 0 .8em 0 .8em;
-	}
+#slide1 {
+  background: url(../images/small/quiz.png) no-repeat center;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
 
-	footer {
-		line-height: 7vh;
-	}
+#slide2 {
+  background: url(../images/small/shopping.png) no-repeat center;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+#slide3 {
+  background: url(../images/small/movie.png) no-repeat 50% 90%;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+#slide4 {
+  background: url(../images/small/hot-cold.png) no-repeat center;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+.my-img {
+  width: 250px;
+  height: 250px;
+}
+
+.bio {
+  font-size: 15px;
+  line-height: 2em;
+  padding: 2em;
+}
+
+#features {
+  background: url(../images/small/featuresbg.jpg) no-repeat;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  padding-top: 4.5em;
+  padding-bottom: 2em;
+  line-height: 2em;
+}
+
+#contacts {
+  height: 120px;
+}
+
+.social {
+  line-height: 120px;
+}
+
+.social img {
+  margin: 0 .8em 0 .8em;
+}
+
+footer {
+  line-height: 30px;
+}
 
 }
 
 /* media query for phones with min-width of 480px and max-width of 599px */
 @media screen and (min-width: 480px) and (max-width: 599px) {
-
-	.bio {
-		font-size: 15px;
-		line-height: 2em;
-		padding: 2em;
-	}
-
-	#features {
-		padding-top: 4.5em;
-		padding-bottom: 2em;
-		line-height: 2em;
-	}
-
-	#contacts {
-		height: 30vh;
-	}
-
-	.social {
-		line-height: 30vh;
-	}
 	
-	.social img {
-		margin: 0 2em 0 2em;
-	}
+#intro {
+  background: url(../images/small/introbg.jpg) no-repeat 50% 50%;
+  background-size: 100%;
+  height: 320px;
+}
 
-	footer {
-		line-height: 12vh;
-	}
+#projects {
+  height: 320px;
+}
+
+#slide1, #slide2, #slide3, #slide4 {
+  height: 220px;
+}
+
+#slide1 {
+  background: url(../images/small/quiz.png) no-repeat center;
+  background-size: 100%;
+}
+
+#slide2 {
+  background: url(../images/small/shopping.png) no-repeat;
+  background-size: 100%;
+}
+
+#slide3 {
+  background: url(../images/small/movie.png) no-repeat 50% 90%;
+  background-size: 100%;
+}
+
+#slide4 {
+  background: url(../images/small/hot-cold.png) no-repeat;
+  background-size: 100%;
+}
+
+#about {
+  background: url(../images/small/aboutbg.jpg) no-repeat center;
+  background-size: 100% 100%;
+}
+
+.bio {
+  font-size: 15px;
+  line-height: 2em;
+  padding: 2em;
+}
+
+#features {
+   background: url(../images/small/featuresbg.jpg) no-repeat;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  padding-top: 4.5em;
+  padding-bottom: 2em;
+  line-height: 2em;
+}
+
+#contacts {
+  height: 96px;
+}
+
+.social {
+  line-height: 96px;
+}
+
+.social img {
+  margin: 0 2em 0 2em;
+}
+
+footer {
+  line-height: 32px;
+}
 
 }
 
 /* media query for tablets with min-width of 600px and max-width of 767px */
 @media (min-width: 600px) and (max-width: 767px) {
 
-	body {
-		background-position: left center;
-	}
+.header h1 {
+  font-size: 3.5em !important;
+}
 
-	.header h1 {
-		font-size: 3.5em !important;
-	}
-	
-	.header p {
-		font-size: 2.5em !important;
-	}
+.header p {
+  font-size: 2.5em !important;
+}
 
-	.bio {
-		font-size: 16px;
-		line-height: 2em;
-		padding: 2em;
-	}
+.bio {
+  font-size: 16px;
+  line-height: 2em;
+  padding: 2em;
+}
 
-	#features {
-		padding-top: 4em;
-		padding-bottom: 2em;
-		line-height: 2em;
-	}
+#intro {
+ height: 700px;
+ background: url(../images/medium/introbg.jpg) no-repeat 40% 50%;
+ -webkit-background-size: cover;
+ -moz-background-size: cover;
+ -o-background-size: cover;
+ background-size: cover;
+}
 
-	#contacts {
-		height: 20vh;
-	}
+#projects {
+  height: 700px;
+}
 
-	.social {
-		line-height: 20vh;
-	}	
+#slide1 {
+  background: url(../images/medium/quiz.png) no-repeat center;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
 
-	.social img {
-		margin: 0 3em 0 3em;
-	}
+#slide2 {
+  background: url(../images/medium/shopping-list.png) no-repeat center;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
 
-	footer {
-		line-height: 8vh;
-		letter-spacing: 4px;
-	}
+#slide3 {
+  background: url(../images/medium/movie.png) no-repeat center;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+#slide4 {
+  background: url(../images/medium/hot-cold.png) no-repeat center;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+#features {
+  background: url(../images/medium/featuresbg.jpg) no-repeat;
+  padding-top: 4em;
+  padding-bottom: 2em;
+  line-height: 2em;
+}
+
+#contacts {
+  height: 140px;
+}
+
+.social {
+  line-height: 140px;
+}	
+
+.social img {
+  margin: 0 3em 0 3em;
+}
+
+footer {
+  line-height: 70px;
+  letter-spacing: 4px;
+}
 
 }
 
 /* media query for small devices (tablets, 768px and up) */
 @media (min-width: 768px) {
 
-	.header h1 {
-		font-size: 3.5em !important;
-	}
+.header h1 {
+  font-size: 3.5em !important;
+}
 
-	.header p {
-		font-size: 2em !important;
-	}
+.header p {
+  font-size: 2em !important;
+}
 
-	.bio {
-		font-size: 16px;
-		line-height: 2em;
-		padding: 1.5em 2em;
-	}
+#intro {
+  height: 550px;
+  background: url(../images/medium/introbg.jpg) no-repeat 40% 50%;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
 
-	#features {
-		height: auto;
-		padding-top: 15%;
-		padding-bottom: 12%;
-		line-height: 2em;
-	}
+#projects {
+  height: 550px;
+}
 
-	.panel {
-		height: 16em;
-		overflow: auto;
-	}
+#myCarousel {
+  top: 15%;
+}
 
-	#contacts {
-		height: 20vh;
-	}
-		
-	.social {
-		line-height: 20vh;
-	}
+#slide1, #slide2, #slide3, #slide4 {
+  height: 400px;
+}
 
-	.social img {
-		margin: 0 4em;
-	}
+#slide1 {
+  background: url(../images/medium/quiz.png) no-repeat center;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
 
-	footer {
-		line-height: 8vh;
-		letter-spacing: 3px;
-		font-size: 16px;
-	}
+#slide2 {
+  background: url(../images/medium/shopping-list.png) no-repeat center;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+#slide3 {
+  background: url(../images/medium/movie.png) no-repeat center;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+#slide4 {
+  background: url(../images/medium/hot-cold.png) no-repeat center;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+.bio {
+  font-size: 16px;
+  line-height: 2em;
+  padding: 1.5em 2em;
+}
+
+#features {
+  background: rgba(220,220,220,1);
+  padding-top: 15%;
+  padding-bottom: 12%;
+  line-height: 2em;
+}
+
+.panel {
+  height: 16em;
+  overflow: auto;
+}
+
+#contacts {
+  height: 160px;
+}
+	
+.social {
+  line-height: 160px;
+}
+
+.social img {
+  margin: 0 4em;
+}
+
+footer {
+  line-height: 80px;
+  letter-spacing: 3px;
+  font-size: 16px;
+}
+
+}
+
+/* media query for iPads in portrait mode */
+@media (width: 768px) and (orientation: portrait) {
+
+#intro, #projects {
+  height: 650px;
+}
+
+#slide1, #slide2, #slide3, #slide4 {
+  height: 480px;
+}
+
+#contacts {
+  height: 160px;
+}
+	
+.social {
+  line-height: 160px;
+}
+
+.social img {
+  margin: 0 4em;
+}
+
+footer {
+  line-height: 80px;
+  letter-spacing: 3px;
+  font-size: 16px;
+}
 
 }
 
 /* media query for medium devices (laptops, small desktops, 992px and up) */
 @media (min-width: 992px) {
 
-	body {
-		background-position: left center;
-	}
+.header h1 {
+  font-size: 4em !important;
+}
 
-	.header h1 {
-		font-size: 4em !important;
-	}
+.header p {
+  font-size: 2.5em !important;
+}
 
-	.header p {
-		font-size: 2.5em !important;
-	}
-	
-	#projects {
-		background: transparent;
-	}
+#intro {
+  height: 760px;
+  background-attachment: fixed;
+}
 
-	#about {
-		height: 100vh;
-	}
-	
-	.img-wrapper {
-		height: 50vh;
-		padding-top: 4em;
-	}
+#projects {
+  height: 760px;
+  background-attachment: fixed;
+}
 
-	.bio {
-		height: 50vh;
-		font-size: 17px;
-		line-height: 2em;
-		padding: 2.5em 3em 0em 3em;
-	}
-	
-	#features {
-		height: 70vh;
-		padding-bottom: 0;
-	}	
+#slide1, #slide2, #slide3, #slide4 {
+  height: 550px;
+}
+
+#about {
+  height: 760px;
+  background-attachment: fixed;
+}
+
+.img-wrapper {
+  height: 380px;
+  padding-top: 4em;
+}
+
+.bio {
+  height: 380px;
+  font-size: 17px;
+  line-height: 2em;
+  padding: 2.5em 3em 0em 3em;
+}
+
+#features {
+  background-attachment: fixed;
+  height: 480px;
+  padding-top: 14%;
+}	
 
 }
 
 /* media query for large devices (larger laptops, desktops, 1200px and up) */
 @media (min-width: 1200px) {
 
-	.header h1 {
-		font-size: 3.5em !important;
-	}
+.header h1 {
+  font-size: 3.5em !important;
+}
 
-	.header p {
-		font-size: 2.5em !important;
-	}
+.header p {
+  font-size: 2.5em !important;
+}
 
-	#projects {
-		background: transparent;
-	}
+#intro {
+  background: url(../images/introbg.jpg) no-repeat center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
 
-	.bio {
-		font-size: 18px;
-		line-height: 2.5em;
-		padding: 1em 3em 0em 3em;
-	}
+.bio {
+  font-size: 18px;
+  line-height: 2.5em;
+  padding: 1em 3em 0em 3em;
+}
 
-	#features {
-		height: 70vh;
-		padding-top: 12%;
-		line-height: 2.5em;
-	}
-	
-	.panel {
-		height: 16em;
-		overflow: auto;
-	}
+#features {
+  height: 560px;
+  padding-top: 13%;
+  line-height: 2.5em;
+}
 
-	#contacts {
-		height: 20vh;
-	}	
+.panel {
+  height: 16em;
+  overflow: auto;
+}
 
-	.social {
-		line-height: 20vh;
-	}
+#contacts {
+  height: 160px;
+}	
 
-	.social img {
-		margin: 0 5em;
-	}
+.social {
+  line-height: 160px;
+}
 
-	footer {
-		line-height: 10vh;
-		letter-spacing: 4px;
-	}
+.social img {
+  margin: 0 5em;
+}
+
+footer {
+  line-height: 80px;
+  letter-spacing: 4px;
+}
 
 } 
 
 /* media query for xtra-large screens (1500px and up) */
 @media (min-width: 1500px) {
 
-	.bio {
-		font-size: 19px;
-		line-height: 3em;
-		padding: 2em 6em 0 6em;		
-	}
+.bio {
+  font-size: 19px;
+  line-height: 3em;
+  padding: 3em 6em 0 6em;		
+}
 
-	#features {
-		padding-top: 10%;
-	}
+#intro, #projects {
+  height: 900px;
+}
 
-	.panel {
-		margin: 0 4em;
-	}
+#slide1, #slide2, #slide3, #slide4 {
+  height: 630px;
+}
 
-	.social img {
-		margin: 0 6em;
-	}
+#about {
+  height: auto;
+}
+
+#features {
+  height: 630px;
+  padding-top: 10%;
+}
+
+.panel {
+  margin: 0 4em;
+}
+
+#contacts {
+  height: 180px;
+}	
+
+.social {
+  line-height: 180px;
+}
+
+.social img {
+  margin: 0 6em;
+}
+
+footer {
+  line-height: 90px;
+  letter-spacing: 4px;
+}
 
 }
 
 /* media query for xtra-large screens (1700px and up) */
 @media (min-width: 1700px) {
 
-	#about {
-		background: url(../images/city.jpg) no-repeat center center;
-		background-attachment: fixed;
-		overflow: hidden;
-	}
-
-	.bio {
-		font-size: 20px;
-		line-height: 3em;
-		padding: 2em 6em 0 6em;	
-	}
-
-	.social img {
-		margin: 0 7em;
-	}
-
+#intro, #projects {
+  height: 1080px;
 }
 
+#myCarousel {
+  top: 20%;
+}
+
+#about {
+  height: auto;
+  background: url(../images/large/city.jpg) no-repeat center center fixed;
+  overflow: hidden;
+}
+
+.bio {
+  font-size: 20px;
+  line-height: 3em;
+  padding: 3em 6em 0 6em;	
+}
+
+.social img {
+  margin: 0 7em;
+}
+
+}
 
 
 
