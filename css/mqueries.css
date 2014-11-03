@@ -408,12 +408,10 @@ footer {
 
 #intro {
   height: 760px;
-  background-attachment: fixed;
 }
 
 #projects {
   height: 760px;
-  background-attachment: fixed;
 }
 
 #slide1, #slide2, #slide3, #slide4 {
@@ -422,7 +420,6 @@ footer {
 
 #about {
   height: 760px;
-  background-attachment: fixed;
 }
 
 .img-wrapper {
@@ -438,7 +435,6 @@ footer {
 }
 
 #features {
-  background-attachment: fixed;
   height: 480px;
   padding-top: 14%;
 }	
@@ -462,6 +458,14 @@ footer {
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
+}
+
+#projects {
+  background-attachment: fixed;
+}
+
+#about {
+  background-attachment: fixed;
 }
 
 .bio {
